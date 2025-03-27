@@ -14,27 +14,29 @@ const AboutUs = () => {
             About us
           </Text>
           <Text className="md:text-[40px] lg:text-[40px] text-center font-bold text-[#f0542d]">
-            Mountain square Constructions Pvt Ltd
+            Mountain square Constructions
           </Text>
           <Text className="md:text-[25px] lg:text-[25px] font-semibold text-center text-[#f0542d]">
             We Build Your Dream
           </Text>
           <Text className="mt-8 lg:text-[25px] text-center text-pretty">
-            Founded on principles of excellence and integrity,{" "}
+            At
             <span className="text-[#f0542d] font-semibold">
               {" "}
-              Mountain Square Constructions Pvt Ltd{" "}
+              Mountain Square Constructions,{" "}
             </span>{" "}
-            stands as a pillar in the construction industry with{" "}
-            <span className="text-[#f0542d] font-semibold">
-              {" "}
-              25 years of comprehensive experience{" "}
-            </span>
-            in construction, architecture, and design. Our journey has been
-            defined by a commitment to quality craftsmanship, reasonable
-            pricing, and punctual service delivery. Led by a visionary with a
-            quarter-century of industry expertise, we have successfully
-            delivered numerous landmark projects across diverse sectors:
+            we specialize in delivering high-quality residential, commercial,
+            and industrial projects. With years of experience, we combine
+            innovation, precision, and sustainable practices to create
+            structures that stand the test of time. Our team of skilled
+            professionals ensures every project is completed on time, within
+            budget, and to the highest standards
+          </Text>
+          <Text className="mt-8 lg:text-[25px] text-center text-pretty">
+            We take pride in turning our clients' visions into reality, from
+            design to completion. Our commitment to craftsmanship and customer
+            satisfaction has earned us a trusted reputation in the industry. Let
+            us build your future with quality and care.
           </Text>
         </Box>
       </SectionContainer>
@@ -43,60 +45,60 @@ const AboutUs = () => {
           variant="h2"
           className=" font-semibold text-[#e64a27] text-center md:text-[35px] lg:text-[35px]"
         >
-          We are Offering
+          Building Your Vision with Our Services
         </Text>
-        <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 md:gap-y-20 my-10">
+        <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-5 md:gap-y-20 my-10">
           {" "}
           <Box className="bg-gradient-to-tr from-[#833ab4]/80 via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
             <Text className="md:text-[25px] text-white lg:text-[25px] font-semibold mb-3 flex items-center gap-x-4">
-              Individual Houses & construction
+              Construction of Independent/Individual Houses
             </Text>
             <Text className=" text-white">
-              We've completed <b>15 residential projects </b> with 3 currently
-              in progress, each reflecting our dedication to creating living
-              spaces that blend functionality with aesthetic appeal.
+              We specialize in building custom homes that reflect your unique
+              style and needs, ensuring quality craftsmanship and attention to
+              detail in every project. From foundation to finishing touches, we
+              bring your dream home to life.
             </Text>
           </Box>
           <Box className="bg-gradient-to-bl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
             <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold flex items-center gap-x-4">
-              Renovation & Fit-out Specialists
+              Interior Design and Execution
             </Text>
 
             <Text className=" text-white">
-              Our portfolio includes <b>16 completed renovation </b>and fit-out
-              projects, alongside various specialized service engagements
-              tailored to specific client requirements.
+              Our expert designers create functional and aesthetically pleasing
+              interiors, tailoring each space to suit your lifestyle. We handle
+              everything from concept to execution, ensuring your vision is
+              realized beautifully.
             </Text>
           </Box>
           <Box className="bg-gradient-to-tl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
             <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold text-center flex items-center  gap-x-4">
               {" "}
-              Interior Design Mastery
+              2D & 3D Architectural Planning
             </Text>
             <Text className=" text-white">
               {" "}
-              We've transformed over <b> 7,000 square feet </b> of interior
-              spaces across Bangalore, bringing creative vision to life through
-              meticulous attention to detail.
+              We provide detailed 2D and 3D architectural plans to give you a
+              clear vision of your project before construction begins. Our
+              designs combine creativity, functionality, and precision to guide
+              your project seamlessly from start to finish.
             </Text>{" "}
           </Box>
-          {/* <Box className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
-              <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold text-center flex items-center justify-start gap-x-4">
-                {" "}
-                <Sparkles fill="#fff" className="mb-3" />
-                Commercial Project Achievements
-              </Text>
-              <Text className=" text-white">
-                {" "}
-                Delivered <b>2,300 square feet </b> of office interiors under
-                tight 30-day deadlines - Successfully completed{" "}
-                <b>80,000 square feet </b> of civil hard finishes for
-                prestigious developments - Executed fast-track completion of
-                22,000+ square feet of masonry and plastering work -
-                Accomplished over 250,000 square feet of specialized finishing
-                work on large-scale projects
-              </Text>{" "}
-            </Box> */}
+          <Box className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
+            <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold text-center flex items-center justify-start gap-x-4">
+              {" "}
+              {/* <Sparkles fill="#fff" className="mb-3" /> */}
+              Renovation and Remodeling of Existing Buildings
+            </Text>
+            <Text className=" text-white">
+              {" "}
+              We breathe new life into old spaces through expert renovation and
+              remodeling services. Whether updating interiors or enhancing
+              structural elements, we transform your existing building into
+              something fresh and modern.
+            </Text>{" "}
+          </Box>
         </Box>
       </SectionContainer>
       <SectionContainer>
@@ -105,9 +107,8 @@ const AboutUs = () => {
             <Eye size={100} fill="#e64a27" stroke="#fff" className="mx-auto" />
             <Text variant="h2">OUR VISION</Text>
             <Text className="lg:text-[20px] text-center text-pretty mt-5">
-              Sit lectus amet quis vitae nunc volutpat. Sapien, senectus in a,
-              enim amet. Etiam libero in euismod massa.Explore our Recent
-              Projects Explore our Recent Projects.
+              To be a leader in innovative, sustainable construction that shapes
+              communities and enhances lives.
             </Text>
           </Box>
           <Box className="text-center">
@@ -119,9 +120,9 @@ const AboutUs = () => {
             />
             <Text variant="h2">OUR MISSION</Text>
             <Text className="lg:text-[20px] text-center text-pretty mt-5">
-              Sit lectus amet quis vitae nunc volutpat. Sapien, senectus in a,
-              enim amet. Etiam libero in euismod massa.Explore our Recent
-              Projects Explore our Recent Projects.
+              Delivering high-quality, efficient construction services while
+              exceeding client expectations and maintaining the highest
+              standards.
             </Text>
           </Box>
         </Box>

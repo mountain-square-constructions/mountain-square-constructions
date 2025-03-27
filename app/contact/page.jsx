@@ -29,10 +29,12 @@ const Contact = () => {
               variant="h1"
               className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-wider"
             >
-              Get Free Consultation
+              Reach New Heights with Us – Connect Today!
             </Text>
             <Text className="text-white/90 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-              Get our free consultation, Check our Quotes
+              Let’s turn your vision into reality, one strong foundation at a
+              time. We're here to listen, collaborate, and build your future
+              together.
             </Text>
           </SectionContainer>
         </Box>
@@ -42,15 +44,15 @@ const Contact = () => {
         <Box className="grid md:grid-cols-12 gapx-10">
           <Box className="md:col-span-5 pr-11">
             <Text variant="h2" className="text-[#e64a27] mb-5">
-              Book Now, Get Consultation
+              Visit us to explore our projects.
             </Text>
             <Box className="flex items-start gap-x-8 mb-10">
               <MapPin size={80} fill="#e64a27" stroke="#fff" />
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Address</Text>
                 <Text>
-                  S.no 13, Adhibatla road, new municipal office, Badangpet,
-                  Telangana, 500058.
+                  Sy no 1 Rama Reddy building Hulimangala panchayat Jigani hobli
+                  Anekal taluk Bangalore 560100
                 </Text>
               </Box>
             </Box>
@@ -74,7 +76,7 @@ const Contact = () => {
           </Box>
           <Box className="md:col-span-7">
             <Text variant="h2" className="text-[#e64a27] mb-5">
-              We are here for you, Get the price of your Dream
+              Get Started Today
             </Text>
             <ContactForm />
           </Box>

@@ -27,7 +27,7 @@ const Header = () => {
           {/* Logo */}
           <Box className="flex justify-center lg:justify-start w-full lg:w-auto">
             <Image
-              src="/mountain-square-logo.webp"
+              src="/mountain-square-logo.png"
               alt="logo"
               width={100}
               height={80}

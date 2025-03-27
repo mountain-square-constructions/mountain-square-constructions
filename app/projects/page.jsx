@@ -16,7 +16,7 @@ import {
 const Projects = () => {
   const projectCategories = [
     {
-      title: "Individual Houses Construction",
+      title: "Construction of Independent/Individual Houses",
       projects: [
         {
           id: 1,
@@ -45,7 +45,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "Interior Designing",
+      title: "2D & 3D Architectural Planning",
       projects: [
         {
           id: 1,
@@ -80,7 +80,36 @@ const Projects = () => {
       ],
     },
     {
-      title: "Renovation of Buildings",
+      title: "Interior Design and Execution",
+      projects: [
+        {
+          id: 1,
+          image: "/budget.jpg",
+          location: "Historic Townhouse Townhouse",
+          pin: "Boston",
+        },
+        {
+          id: 2,
+          image: "/standard.png",
+          location: "Industrial Loft Conversion",
+          pin: "Brooklyn",
+        },
+        {
+          id: 3,
+          image: "/homepage-hero-img1.jpg",
+          location: "Victorian Restoration",
+          pin: "San Francisco",
+        },
+        {
+          id: 4,
+          image: "/renovationhouse.avif",
+          location: "Commercial Building Revitalization",
+          pin: "Portland",
+        },
+      ],
+    },
+    {
+      title: "Renovation and Remodeling of Existing Buildings",
       projects: [
         {
           id: 1,
@@ -136,8 +165,7 @@ const Projects = () => {
               Our Projects
             </Text>
             <Text className="text-white/90 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-              Discover our portfolio of exceptional construction projects that
-              showcase our commitment to quality, innovation, and excellence
+              Explore the Difference We’ve Made in Our Customers’ Lives.
             </Text>
           </SectionContainer>
         </Box>
@@ -150,7 +178,7 @@ const Projects = () => {
             variant="h2"
             className="text-3xl font-bold mb-8 text-center text-[#e64a27]"
           >
-            Featured Projects
+            Explore Our Completed and Ongoing Projects in Bangalore
           </Text>
           <Box>
             {projectCategories.map((category, index) => (

@@ -11,7 +11,7 @@ const ContactSection = () => {
       <Box className="grid grid-cols-1 md:grid-cols-2 items-center bg-gray-100 p-5 rounded-xl mx-auto shadow-lg mt-10">
         <Box>
           <Text className="!text-[30px] font-bold font-nunito text-center mb-10">
-            Let Build Tommorrow Today!
+            Reach New Heights with Us – Connect Today!
           </Text>
           <Box className="flex items-center justify-center">
             <Image

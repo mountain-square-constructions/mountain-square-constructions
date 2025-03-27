@@ -14,7 +14,7 @@ const Footer = () => {
         <Box className="grid grid-cols-1 space-y-4 sm:grid-cols-2 sm:space-y-3 md:grid-cols-5 md:space-y-0 justify-between items-start">
           <Box className="flex flex-col justify-start w-full lg:w-auto">
             <Image
-              src="/mountain-square-logo.webp"
+              src="/mountain-square-white-logo.png"
               alt="logo"
               width={100}
               height={80}
