@@ -18,7 +18,7 @@ const Projects = () => {
             {" "}
             OUR COMPLETED PROJECTS
           </Text>
-          <Box className="grid grid-cols-3 gap-10 ">
+          <Box className="grid grid-cols-1 md:grid-cols-3 md:gap-10 ">
             <Box className=" shadow-lg rounded-lg bg-background">
               <Image
                 src="/individualhouseprject1.jpeg"

@@ -16,7 +16,7 @@ const ServicesOffered = () => {
           OUR SERVICES
         </Text>
 
-        <Box className="grid grid-cols-3 gap-10">
+        <Box className="grid grid-cols-1 md:grid-cols-3 md:gap-10">
           <Box className="relative">
             <Image
               src="/individualhouse.jpeg"

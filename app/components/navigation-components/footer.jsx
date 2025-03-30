@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <Box className="bg-[#f0542d]">
       <SectionContainer>
-        <Box className="flex justify-between items-start">
+        <Box className="flex flex-col md:flex-row justify-between items-start">
           <Box className="">
             <Box className="flex flex-col justify-center items-center w-full lg:w-auto ">
               <Image
@@ -43,7 +43,7 @@ const Footer = () => {
               </Box>
             </Box>
           </Box>
-          <Box className="mr-10">
+          <Box className="mr-0 md:mr-10">
             <Text className="text-[20px] font-bold text-white mb-3">
               Quick Links
             </Text>
