@@ -5,6 +5,7 @@ import Image from "next/image";
 import Text from "../components/text";
 import ContactForm from "../components/contact-form";
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -70,7 +71,12 @@ const Contact = () => {
               <Mail size={50} fill="#e64a27" stroke="#fff" />
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Email</Text>
-                <Text>contact@mountainsquareconstructions.in</Text>
+                <Text>
+                  <Link href="mailto:contact@mountainsquareconstruction.com">
+                    {" "}
+                    contact@mountainsquareconstruction.com
+                  </Link>
+                </Text>
               </Box>
             </Box>
           </Box>

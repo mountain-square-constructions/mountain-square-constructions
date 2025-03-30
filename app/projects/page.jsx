@@ -45,6 +45,35 @@ const Projects = () => {
       ],
     },
     {
+      title: "Interior Design and Execution",
+      projects: [
+        {
+          id: 1,
+          image: "/budget.jpg",
+          location: "Historic Townhouse Townhouse",
+          pin: "Boston",
+        },
+        {
+          id: 2,
+          image: "/standard.png",
+          location: "Industrial Loft Conversion",
+          pin: "Brooklyn",
+        },
+        {
+          id: 3,
+          image: "/homepage-hero-img1.jpg",
+          location: "Victorian Restoration",
+          pin: "San Francisco",
+        },
+        {
+          id: 4,
+          image: "/renovationhouse.avif",
+          location: "Commercial Building Revitalization",
+          pin: "Portland",
+        },
+      ],
+    },
+    {
       title: "2D & 3D Architectural Planning",
       projects: [
         {
@@ -76,35 +105,6 @@ const Projects = () => {
           image: "/bestquality.jpg",
           location: "Restaurant Redesign",
           pin: "Seattle",
-        },
-      ],
-    },
-    {
-      title: "Interior Design and Execution",
-      projects: [
-        {
-          id: 1,
-          image: "/budget.jpg",
-          location: "Historic Townhouse Townhouse",
-          pin: "Boston",
-        },
-        {
-          id: 2,
-          image: "/standard.png",
-          location: "Industrial Loft Conversion",
-          pin: "Brooklyn",
-        },
-        {
-          id: 3,
-          image: "/homepage-hero-img1.jpg",
-          location: "Victorian Restoration",
-          pin: "San Francisco",
-        },
-        {
-          id: 4,
-          image: "/renovationhouse.avif",
-          location: "Commercial Building Revitalization",
-          pin: "Portland",
         },
       ],
     },

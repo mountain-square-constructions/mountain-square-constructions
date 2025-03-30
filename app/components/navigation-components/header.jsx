@@ -6,10 +6,10 @@ import {
   Instagram,
   Linkedin,
   Mail,
-  PhoneCallIcon,
   Twitter,
   Menu,
   X,
+  PhoneIcon,
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -19,6 +19,16 @@ import Text from "../text";
 import Link from "next/link";
 
 const Header = () => {
+  const handleClick = (phoneNumber) => {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      // If screen is large (desktop), copy to clipboard
+      navigator.clipboard.writeText(phoneNumber);
+      alert("Phone number copied to clipboard!");
+    } else {
+      // If screen is small (mobile), open the dialer
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  };
   return (
     <>
       {/* Top header section */}
@@ -39,7 +49,7 @@ const Header = () => {
           <Box className="flex flex-col md:flex-row items-center gap-4 lg:gap-x-6 xl:gap-x-16">
             {/* Phone */}
             <Box className="flex items-center gap-x-3">
-              <PhoneCallIcon
+              <PhoneIcon
                 fill="#f0542d"
                 stroke="#fff"
                 size={40}
@@ -49,28 +59,33 @@ const Header = () => {
                 <Text className="font-normal text-sm md:text-base">
                   Call Us:
                 </Text>
-                <Text className="font-semibold text-sm md:text-base">
-                  9897695778
+                <Text
+                  className="underline cursor-pointer"
+                  onClick={() => handleClick("+919059745631")}
+                >
+                  +91 90597 45631
                 </Text>
               </Box>
             </Box>
 
             {/* Email - only show on larger screens */}
-            <Box className="flex items-center gap-x-3 hidden md:flex">
+            <Box className="items-center gap-x-3 hidden md:flex">
               <Mail fill="#f0542d" stroke="#fff" size={40} />
               <Box>
                 <Text className="font-normal text-sm lg:text-base">
                   Email Us:
                 </Text>
                 <Text className="font-semibold text-sm lg:text-base truncate max-w-[200px] lg:max-w-full">
-                  mountainsquareconstructions@gmail.com
+                  <Link href="mailto:contact@mountainsquareconstruction.com">
+                    contact@mountainsquareconstruction.com
+                  </Link>
                 </Text>
               </Box>
             </Box>
 
             {/* CTA Button */}
             <Box className="flex items-center">
-              <Button className="bg-[#f0542d] text-base md:text-xl lg:text-[23px] rounded-none h-10 md:h-12 lg:h-14 px-6 md:px-8 lg:px-10">
+              <Button className="bg-[#f0542d] hover:bg-[#f0542d]/90 text-base md:text-xl lg:text-[23px] rounded-none h-10 md:h-12 lg:h-14 px-6 md:px-8 lg:px-10">
                 Get a Quote
               </Button>
             </Box>

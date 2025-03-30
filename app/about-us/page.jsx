@@ -14,7 +14,7 @@ const AboutUs = () => {
             About us
           </Text>
           <Text className="md:text-[40px] lg:text-[40px] text-center font-bold text-[#f0542d]">
-            Mountain square Constructions
+            Mountain square Construction
           </Text>
           <Text className="md:text-[25px] lg:text-[25px] font-semibold text-center text-[#f0542d]">
             We Build Your Dream
@@ -23,7 +23,7 @@ const AboutUs = () => {
             At
             <span className="text-[#f0542d] font-semibold">
               {" "}
-              Mountain Square Constructions,{" "}
+              Mountain Square Construction,{" "}
             </span>{" "}
             we specialize in delivering high-quality residential, commercial,
             and industrial projects. With years of experience, we combine
