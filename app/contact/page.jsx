@@ -74,7 +74,7 @@ const Contact = () => {
                 <Text>
                   <Link href="mailto:contact@mountainsquareconstruction.com">
                     {" "}
-                    contact@mountainsquareconstruction.com
+                    contact@mountainsquarec onstruction.com
                   </Link>
                 </Text>
               </Box>

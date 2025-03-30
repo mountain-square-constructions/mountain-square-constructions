@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <Box className="bg-[#f0542d]">
       <SectionContainer>
-        <Box className="flex flex-col md:flex-row justify-between items-start">
+        <Box className="flex flex-col !space-y-10 md:space-y-0 md:flex-row md:justify-between md:items-start">
           <Box className="">
             <Box className="flex flex-col justify-center items-center w-full lg:w-auto ">
               <Image
@@ -44,10 +44,10 @@ const Footer = () => {
             </Box>
           </Box>
           <Box className="mr-0 md:mr-10">
-            <Text className="text-[20px] font-bold text-white mb-3">
+            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
               Quick Links
             </Text>
-            <ul className="space-y-3 text-[18px] font-medium text-white ml-2">
+            <ul className="space-y-3 text-[18px] font-medium text-white ml-5 md:ml-2">
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/">Home</Link>
@@ -71,11 +71,11 @@ const Footer = () => {
             </ul>
           </Box>
           <Box className="">
-            <Text className="text-[20px] font-bold text-white mb-3">
+            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
               {" "}
               Services
             </Text>
-            <ul className="space-y-3 text-[18px] font-medium text-white">
+            <ul className="space-y-3 text-[18px] font-medium text-white ml-5 md:ml-2">
               <li className="relative group max-w-fit">
                 <Link href="/services">Construction of Individual Houses</Link>
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
@@ -94,47 +94,44 @@ const Footer = () => {
               </li>
             </ul>
           </Box>
-          {/* <Box>
-            <Text className="text-[20px] font-bold text-white mb-3"> Info</Text>
-            <ul className="space-y-3 text-[18px] font-medium text-white">
-              <li className="relative group max-w-fit">
-                <Link href="/services">Blogs</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
-              </li>
-              <li className="relative group max-w-fit">
-                <Link href="/services">Privacy policy</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
-              </li>
-              <li className="relative group max-w-fit">
-                <Link href="/services"> Terms and Conditions</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
-              </li>
-            </ul>
-          </Box> */}
-          <Box className="space-y-3 text-[18px] font-medium text-white ">
-            <Text className="text-[20px] font-bold text-white mb-3">
+
+          <Box className="text-[18px] font-medium text-white ">
+            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
               {" "}
               Contact
             </Text>
-            <Text>
+            <Text className="ml-5 md:ml-0 !whitespace-normal text-wrap">
               {" "}
-              <Link href="mailto:contact@mountainsquareconstruction.com">
+              <Link
+                href="mailto:contact@mountainsquareconstruction.com"
+                className="text-wrap !whitespace-normal"
+              >
                 {" "}
                 contact@mountainsquareconstruction.com
               </Link>
             </Text>
+            {/* <Text className="ml-5 md:ml-0 text-wrap !whitespace-normal">
+              {" "}
+              <Link
+                href="mailto:contact@mountainsquareconstruction.com"
+                className="text-wrap !whitespace-normal"
+              >
+                {" "}
+                masthan.reddy@mountainsquareconstruction.com
+              </Link>
+            </Text> */}
             <Box>
               <Text className="text-[25px] font-semibold mb-1">
                 Phone Number
               </Text>
               <Text
-                className="underline cursor-pointer"
+                className="underline cursor-pointer ml-5 md:ml-0"
                 onClick={() => handleClick("+919059745631")}
               >
                 +91 90597 45631
               </Text>
               <Text
-                className="underline cursor-pointer"
+                className="underline cursor-pointer ml-5 md:ml-0"
                 onClick={() => handleClick("+919059745631")}
               >
                 +91 80744 81787
@@ -142,7 +139,7 @@ const Footer = () => {
             </Box>
             <Button
               variant="outline"
-              className="bg-transparent hover:bg-transparent/10 rounded-none w-fit mt-3"
+              className="bg-transparent hover:bg-transparent/10 rounded-none w-fit mt-3 ml-5 md:ml-0"
             >
               <Link
                 className="!font-semibold text-white text-[18px] "
