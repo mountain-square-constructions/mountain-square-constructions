@@ -74,6 +74,7 @@ const Services = () => {
       brandColor: "#f0542d",
       img: "/slider2.jpg",
     },
+
     {
       icon: RefreshCw,
       title: "Renovation and Remodeling of Existing Buildings",
