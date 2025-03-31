@@ -100,7 +100,7 @@ const ServicesOffered = () => {
             </li>
             <li>Prepare Buildup Drawings for Approval.</li>
             <li>
-              Keep Client’s relation and sincerely try to fulfill their dreams
+              Keep Client's relation and sincerely try to fulfill their dreams
               as much as we can.
             </li>
           </ul>
