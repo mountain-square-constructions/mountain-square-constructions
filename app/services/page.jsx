@@ -105,7 +105,7 @@ const Services = () => {
           <SectionContainer>
             <Text
               variant="h2"
-              className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-wider"
+              className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
             >
               Our Services
             </Text>
@@ -117,7 +117,7 @@ const Services = () => {
         </Box>
       </Box>
       <SectionContainer className="">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

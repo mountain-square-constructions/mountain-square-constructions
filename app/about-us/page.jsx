@@ -2,7 +2,14 @@ import React from "react";
 import SectionContainer from "../components/section-container";
 import Box from "../components/box";
 import Text from "../components/text";
-import { Award, Eye, Sparkles } from "lucide-react";
+import {
+  Award,
+  Building,
+  CalendarDays,
+  Eye,
+  Sparkles,
+  UserRound,
+} from "lucide-react";
 import Image from "next/image";
 
 const AboutUs = () => {
@@ -101,29 +108,142 @@ const AboutUs = () => {
           </Box>
         </Box>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer className="pt-0">
         <Box className="grid grid-cols-1 md:grid-cols-2  gap-x-20">
           <Box className="text-center">
-            <Eye size={100} fill="#e64a27" stroke="#fff" className="mx-auto" />
-            <Text variant="h2">OUR VISION</Text>
+            {/* <Eye size={100} fill="#e64a27" stroke="#fff" className="mx-auto" /> */}
+            <Image
+              src="/bulb.png"
+              alt="mission"
+              width={100}
+              height={100}
+              className="mx-auto"
+            />
+            <Text variant="h2" className="mt-3">
+              OUR VISION
+            </Text>
             <Text className="lg:text-[20px] text-center text-pretty mt-5">
               To be a leader in innovative, sustainable construction that shapes
               communities and enhances lives.
             </Text>
           </Box>
           <Box className="text-center">
-            <Award
+            {/* <Award
               size={100}
               fill="#e64a27"
               stroke="#fff"
               className="mx-auto"
+            /> */}
+            <Image
+              src="/mission.png"
+              alt="mission"
+              width={100}
+              height={100}
+              className="mx-auto"
             />
-            <Text variant="h2">OUR MISSION</Text>
+            <Text variant="h2" className="mt-3">
+              OUR MISSION
+            </Text>
             <Text className="lg:text-[20px] text-center text-pretty mt-5">
               Delivering high-quality, efficient construction services while
               exceeding client expectations and maintaining the highest
               standards.
             </Text>
+          </Box>
+        </Box>
+
+        <Box className="bg-background shadow-lg py-5 rounded-2xl xl:rounded-full px-0 md:px-32 mt-14">
+          <Box className="flex flex-row flex-wrap gap-10 justify-evenly md:justify-between items-center">
+            <Box>
+              <Box className="flex items-center gap-x-3">
+                <CalendarDays
+                  fill="#f0542d"
+                  className="mx-auto"
+                  size={50}
+                  stroke="#fff"
+                />
+                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
+                  25 +{" "}
+                </Text>
+              </Box>
+              <Text className="text-[30px] xl:text-[40px] font-medium text-center">
+                Experience
+              </Text>
+            </Box>
+            <Box>
+              <Box className="flex items-center gap-x-3">
+                <Building
+                  fill="#f0542d"
+                  className="mx-auto"
+                  size={50}
+                  stroke="#fff"
+                />
+                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
+                  180 +{" "}
+                </Text>
+              </Box>
+              <Text className=" text-[30px] xl:text-[40px]  font-medium text-center">
+                Projects
+              </Text>
+            </Box>
+            <Box>
+              <Box className="flex items-center gap-x-3">
+                <UserRound
+                  fill="#f0542d"
+                  className="mx-auto"
+                  size={50}
+                  stroke="#fff"
+                />
+                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
+                  500 +{" "}
+                </Text>
+              </Box>
+              <Text className="text-[30px] xl:text-[40px]  font-medium text-center">
+                Happy Clients
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+
+        <Box className="mt-20 mb-5">
+          <Text
+            variant="h2"
+            className=" font-semibold text-[#e64a27] text-[30px] text-center md:text-[35px] lg:text-[35px]"
+          >
+            {" "}
+            Our Team
+          </Text>
+          <Box className="grid grid-cols-3 gap-x-3">
+            <Box className="bg-white shadow-lg">
+              <Image
+                src="/blankperson.jpg"
+                alt="blankperson"
+                width={200}
+                height={400}
+                className="w-full h-auto"
+              />
+              <Text className="text-[30px] text-center">Masthan Reddy</Text>
+            </Box>
+            <Box className="bg-white shadow-lg">
+              <Image
+                src="/blankperson.jpg"
+                alt="blankperson"
+                width={200}
+                height={400}
+                className="w-full h-auto"
+              />
+              <Text className="text-[30px] text-center">Masthan Reddy</Text>
+            </Box>
+            <Box className="bg-white shadow-lg">
+              <Image
+                src="/blankperson.jpg"
+                alt="blankperson"
+                width={200}
+                height={400}
+                className="w-full h-auto"
+              />
+              <Text className="text-[30px] text-center">Masthan Reddy</Text>
+            </Box>
           </Box>
         </Box>
       </SectionContainer>

@@ -93,7 +93,7 @@ const HeroSection = () => {
             >
               <Text
                 variant="h1"
-                className="font-[900] !text-white !text-[25px] sm:!text-[35px] md:!text-[44px] lg:!text-[64px] tracking-tight leading-tight mb-4 font-nunito text-shadow-lg"
+                className="font-[900] !text-white !text-[25px] sm:!text-[35px] md:!text-[44px] lg:!text-[64px] tracking-tight leading-tight mb-4 text-shadow-lg"
               >
                 {slide.title}
               </Text>

@@ -64,11 +64,11 @@ const ServicesOffered = () => {
     <SectionContainer>
       <Text
         variant="h2"
-        className="text-[#f0542d] text-center md:text-[35px] lg:text-[35px] tracking-wider font-bold mb-10"
+        className="text-[#f0542d] text-center md:text-[35px] lg:text-[35px] tracking-tight font-bold mb-10"
       >
         Be at Our Serve, We are the Best
       </Text>
-      <Box className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20 items-center">
+      <Box className="grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-y-0 md:gap-x-20 items-center">
         <Box>
           <Image
             src="/Homepageservices.jpg"

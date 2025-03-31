@@ -79,11 +79,11 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <Box className="bg-lightbackground/50 py-16">
-      <SectionContainer>
+      <SectionContainer className="py-0 md:py-12">
         <Box className="flex flex-col items-center">
           <Text
             variant="h2"
-            className="text-center md:text-[35px] lg:text-[35px] tracking-wider font-bold mb-12"
+            className="text-center text-[30px] md:text-[35px] lg:text-[35px] font-bold mb-12 text-[#f0542d]"
           >
             OUR COMPLETED PROJECTS
           </Text>

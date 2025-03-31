@@ -1,4 +1,4 @@
-import { Source_Sans_3, Nunito_Sans } from "next/font/google";
+import { Source_Sans_3, Roboto } from "next/font/google";
 import "./globals.css";
 import Header, { SubHeader } from "./components/navigation-components/header";
 import Box from "./components/box";
@@ -17,11 +17,14 @@ import Footer from "./components/navigation-components/footer";
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["400", "500", "700"], // Only use available Roboto weights
+  display: "swap",
 });
 
 export const metadata = {
@@ -31,7 +34,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${sourceSans.variable} ${nunitoSans.variable}`}>
+    <html lang="en" className={`${sourceSans.variable} ${roboto.variable}`}>
       <body className="font-sans antialiased">
         <Header />
         <Box className="sticky top-0 z-50 bg-background shadow-md">

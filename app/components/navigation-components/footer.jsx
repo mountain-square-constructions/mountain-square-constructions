@@ -107,7 +107,7 @@ const Footer = () => {
                 className="text-wrap !whitespace-normal"
               >
                 {" "}
-                contact@mountainsquareconstruction.com
+                contact@mountainsquareconstructio n.com
               </Link>
             </Text>
             {/* <Text className="ml-5 md:ml-0 text-wrap !whitespace-normal">

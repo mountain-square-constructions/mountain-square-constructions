@@ -4,18 +4,36 @@ import Text from "./text";
 import Box from "./box";
 import Image from "next/image";
 import { Building, CalendarDays, HomeIcon, UserRound } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const AboutusSection = () => {
+  const stats = [
+    {
+      icon: CalendarDays,
+      value: "25+",
+      label: "Years Experience",
+    },
+    {
+      icon: Building,
+      value: "180+",
+      label: "Projects Completed",
+    },
+    {
+      icon: UserRound,
+      value: "500+",
+      label: "Happy Clients",
+    },
+  ];
   return (
-    <Box className="bg-[#fbfbfb]">
+    <Box className="bg-[#fbfefb]">
       <SectionContainer>
         <Text
           variant="h2"
-          className="text-[#f0542d] text-center md:text-[35px] lg:text-[35px] tracking-wider font-bold mb-10"
+          className="text-[#f0542d] text-center text-[30px] md:text-[35px] lg:text-[35px] font-bold mb-10"
         >
           About Us
         </Text>
-        <Box className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20 items-center">
+        <Box className="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-y-0 md:gap-x-20 items-center">
           <Box>
             <Image
               src="/bestquality.jpg"
@@ -54,62 +72,42 @@ const AboutusSection = () => {
           </Box>
         </Box>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer className="py-0">
         <Text
           variant="h2"
-          className="text-[#f0542d] text-center md:text-[35px] lg:text-[35px] tracking-wider font-bold mb-10"
+          className="text-[#f0542d] text-center text-[30px] md:text-[35px] lg:text-[35px] font-bold mb-5"
         >
           Why Hire us
         </Text>
-        <Box className="bg-background shadow-lg py-5 rounded-2xl xl:rounded-full px-0 md:px-32">
-          <Box className="flex flex-col space-y-4 xl:space-y-0 xl:flex-row justify-between items-center">
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <CalendarDays
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  25 +{" "}
-                </Text>
-              </Box>
-              <Text className="text-[30px] xl:text-[40px] font-medium text-center">
-                Experience
-              </Text>
-            </Box>
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <Building
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  180 +{" "}
-                </Text>
-              </Box>
-              <Text className=" text-[30px] xl:text-[40px]  font-medium text-center">
-                Projects
-              </Text>
-            </Box>
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <UserRound
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  500 +{" "}
-                </Text>
-              </Box>
-              <Text className="text-[30px] xl:text-[40px]  font-medium text-center">
-                Happy Clients
-              </Text>
+        <Box className="mx-auto px-4 py-4">
+          <Box className="bg-background shadow-xl py-8 px-6 md:px-10 lg:px-16 rounded-2xl xl:rounded-[30px]">
+            <Box className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-4 lg:gap-x-8">
+              {stats.map((stat, index) => (
+                <Box
+                  key={index}
+                  className={cn(
+                    "flex flex-col items-center justify-center text-center",
+                    "md:border-r-0 md:last:border-r-0",
+                    index !== stats.length - 1 &&
+                      "md:border-r-2 md:border-gray-200"
+                  )}
+                >
+                  <Box className="flex items-center justify-center gap-x-3 mb-2">
+                    <stat.icon
+                      fill="#f0542d"
+                      size={42}
+                      className="flex-shrink-0"
+                      stroke="#fff"
+                    />
+                    <Text className="text-[32px] sm:text-[40px] xl:text-[50px] font-bold text-[#f0542d] leading-tight">
+                      {stat.value}
+                    </Text>
+                  </Box>
+                  <Text className="text-[22px] sm:text-[26px] xl:text-[32px] font-medium text-center">
+                    {stat.label}
+                  </Text>
+                </Box>
+              ))}
             </Box>
           </Box>
         </Box>
