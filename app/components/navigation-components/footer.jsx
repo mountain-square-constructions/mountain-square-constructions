@@ -94,67 +94,44 @@ const Footer = () => {
               </li>
             </ul>
           </Box>
-
-          <Box className="text-[18px] font-medium text-white ">
-            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
-              {" "}
-              Contact
-            </Text>
-            <Text className="ml-5 md:ml-0 !whitespace-normal text-wrap">
-              {" "}
-              <Link
-                href="mailto:contact@mountainsquareconstruction.com"
-                className="text-wrap !whitespace-normal"
-              >
-                {" "}
-                contact@mountainsquareconstructio n.com
-              </Link>
-            </Text>
-            {/* <Text className="ml-5 md:ml-0 text-wrap !whitespace-normal">
-              {" "}
-              <Link
-                href="mailto:contact@mountainsquareconstruction.com"
-                className="text-wrap !whitespace-normal"
-              >
-                {" "}
-                masthan.reddy@mountainsquareconstruction.com
-              </Link>
-            </Text> */}
-            <Box>
-              <Text className="text-[25px] font-semibold mb-1">
-                Phone Number
-              </Text>
-              <Text
-                className="underline cursor-pointer ml-5 md:ml-0"
-                onClick={() => handleClick("+919059745631")}
-              >
-                +91 90597 45631
-              </Text>
-              <Text
-                className="underline cursor-pointer ml-5 md:ml-0"
-                onClick={() => handleClick("+919059745631")}
-              >
-                +91 80744 81787
-              </Text>
-            </Box>
-            <Button
-              variant="outline"
-              className="bg-transparent hover:bg-transparent/10 rounded-none w-fit mt-3 ml-5 md:ml-0"
-            >
-              <Link
-                className="!font-semibold text-white text-[18px] "
-                href="https://www.google.com/maps/place/Hulimangala/@12.8202881,77.6374595,21z/data=!4m14!1m7!3m6!1s0x3bae6b33355ff423:0x1533cdb66f43998f!2sRama+Reddy+Building!8m2!3d12.7883295!4d77.6309192!16s%2Fg%2F11q3ltljdt!3m5!1s0x3bae6b00347d8c2f:0x5cc42e1525647ca6!8m2!3d12.8203779!4d77.6374981!16s%2Fg%2F11wtzsvxrx?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"
-                target="blank"
-              >
-                Click here to view on Google Maps
-              </Link>
-            </Button>
-          </Box>
         </Box>
-        <Box className="border-b bg-white w-full mt-6" />
+        <Box className="border-b bg-white w-full my-5" />
+        <Box className="text-[18px] font-medium text-white flex flex-col md:flex-row gap-3 md:items-center justify-between">
+          <Button
+            variant="outline"
+            className="bg-transparent hover:bg-transparent/10 rounded-none w-fit ml-5 md:ml-0"
+          >
+            <Link
+              className="!font-semibold text-white text-[18px] "
+              href="https://www.google.com/maps/place/Hulimangala/@12.8202881,77.6374595,21z/data=!4m14!1m7!3m6!1s0x3bae6b33355ff423:0x1533cdb66f43998f!2sRama+Reddy+Building!8m2!3d12.7883295!4d77.6309192!16s%2Fg%2F11q3ltljdt!3m5!1s0x3bae6b00347d8c2f:0x5cc42e1525647ca6!8m2!3d12.8203779!4d77.6374981!16s%2Fg%2F11wtzsvxrx?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"
+              target="blank"
+            >
+              Click here to view on Google Maps
+            </Link>
+          </Button>
+
+          <Text className="ml-5 md:ml-0 !whitespace-normal text-wrap">
+            {" "}
+            <Link
+              href="mailto:contact@mountainsquareconstruction.com"
+              className="text-wrap !whitespace-normal"
+            >
+              {" "}
+              contact@mountainsquareconstruction.com
+            </Link>
+          </Text>
+
+          <Text
+            className="underline cursor-pointer ml-5 md:ml-0"
+            onClick={() => handleClick("+91 83109 85053")}
+          >
+            +91 83109 85053
+          </Text>
+        </Box>
+        <Box className="border-b bg-white w-full my-5" />
         <Box className="flex flex-col md:flex-row md:items-center justify-between mt-5 text-white font-normal text-[14px]">
           <Text className="text-[16px]">
-            © 2025 Mountain Square.com All rights reserved.
+            © 2025 mountainsquareconstruction.com All rights reserved.
           </Text>
           <Text className="text-[16px] ">
             <Link className="underline" href="/">

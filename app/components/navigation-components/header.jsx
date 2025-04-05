@@ -10,6 +10,7 @@ import {
   Menu,
   X,
   PhoneIcon,
+  Youtube,
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -61,9 +62,9 @@ const Header = () => {
                 </Text>
                 <Text
                   className="underline cursor-pointer"
-                  onClick={() => handleClick("+919059745631")}
+                  onClick={() => handleClick("+91 83109 85053")}
                 >
-                  +91 90597 45631
+                  +91 83109 85053
                 </Text>
               </Box>
             </Box>
@@ -86,7 +87,7 @@ const Header = () => {
             {/* CTA Button */}
             <Box className="flex items-center">
               <Button className="bg-[#f0542d] hover:bg-[#f0542d]/90 text-base md:text-xl lg:text-[23px] rounded-none h-10 md:h-12 lg:h-14 px-6 md:px-8 lg:px-10">
-                Get a Quote
+                <Link href="/contact"> Get a Quote </Link>
               </Button>
             </Box>
           </Box>
@@ -227,30 +228,46 @@ export const SubHeader = () => {
 
           {/* Social icons for desktop */}
           <Box className="hidden lg:flex items-center gap-x-4 md:gap-x-6 xl:gap-x-10">
-            <Facebook
-              fill="#f0542d"
-              stroke="#fff"
-              size={18}
-              className="cursor-pointer hover:scale-110 transition-transform"
-            />
+            <Link
+              target="blank"
+              href="https://www.facebook.com/people/Mountain-Square-Construction/61574442936404/ "
+            >
+              {" "}
+              <Facebook
+                fill="#f0542d"
+                stroke="#fff"
+                size={18}
+                className="cursor-pointer hover:scale-110 transition-transform"
+              />
+            </Link>
             <Instagram
               fill="#f0542d"
               stroke="#fff"
               size={18}
               className="cursor-pointer hover:scale-110 transition-transform"
             />
-            <Linkedin
-              fill="#f0542d"
-              stroke="#fff"
-              size={18}
-              className="cursor-pointer hover:scale-110 transition-transform"
-            />
-            <Twitter
-              fill="#f0542d"
-              stroke="#fff"
-              size={18}
-              className="cursor-pointer hover:scale-110 transition-transform"
-            />
+            <Link
+              target="blank"
+              href="https://www.linkedin.com/company/mountainsquareconstruction/"
+            >
+              <Linkedin
+                fill="#f0542d"
+                stroke="#fff"
+                size={18}
+                className="cursor-pointer hover:scale-110 transition-transform"
+              />
+            </Link>
+            <Link
+              target="blank"
+              href="http://www.youtube.com/@MountainSquareConstruction"
+            >
+              <Youtube
+                fill="#f0542d"
+                stroke="#fff"
+                size={20}
+                className="cursor-pointer hover:scale-110 transition-transform mt-1"
+              />
+            </Link>
           </Box>
         </Box>
       </SectionContainer>

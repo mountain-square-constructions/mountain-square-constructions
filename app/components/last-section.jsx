@@ -5,8 +5,20 @@ import { Phone, Calendar, ArrowRight } from "lucide-react";
 import Box from "./box";
 import Text from "./text";
 import SectionContainer from "./section-container";
+import Link from "next/link";
 
 const CTASection = () => {
+  const handleClick = (phoneNumber) => {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      // If screen is large (desktop), copy to clipboard
+      navigator.clipboard.writeText(phoneNumber);
+      alert("Phone number copied to clipboard!");
+    } else {
+      // If screen is small (mobile), open the dialer
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  };
+
   return (
     <SectionContainer className="py-16 ">
       <Box className="container mx-auto px-4">
@@ -23,27 +35,28 @@ const CTASection = () => {
           <Box className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
             <Button
               size="lg"
-              className="bg-[#f0542d] hover:bg-[#d94020] text-white py-6 px-8 text-lg rounded-lg flex items-center gap-2 shadow-lg transition-transform hover:scale-105"
-              onClick={() => (window.location.href = "/get-quote")}
+              className="bg-[#f0542d] hover:bg-[#d94020] text-white py-6 px-8 text-lg rounded-lg shadow-lg transition-transform hover:scale-105"
             >
-              <Calendar className="w-5 h-5" />
-              Get Your Free Quote
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <Link href="/contact" className="flex items-center gap-2">
+                <Calendar className="w-5 h-5" />
+                Get Your Free Quote
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
 
             <Button
               variant="outline"
               size="lg"
               className="bg-transparent border-2 border-black hover:bg-white hover:text-gray-900 py-6 px-8 text-lg rounded-lg flex items-center gap-2 transition-colors"
-              onClick={() => (window.location.href = "tel:+1234567890")}
+              onClick={() => handleClick("+91 83109 85053")}
             >
               <Phone className="w-5 h-5" />
-              Call Us Now: (123) 456-7890
+              Call Us Now: +91 83109 85053
             </Button>
           </Box>
         </Box>
 
-        <Box className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        {/* <Box className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <Box className="bg-[#f0542d]/10 p-6 rounded-lg backdrop-blur-sm text-center">
             <Box className="text-[#f0542d] font-bold text-5xl mb-2">24/7</Box>
             <Text className="text-xl font-medium">Customer Support</Text>
@@ -58,14 +71,14 @@ const CTASection = () => {
             <Box className="text-[#f0542d] font-bold text-5xl mb-2">500+</Box>
             <Text className="text-xl font-medium">Projects Completed</Text>
           </Box>
-        </Box>
+        </Box> */}
 
-        <Text className="text-center mt-12 text-lg">
+        {/* <Text className="text-center mt-12 text-lg">
           <span className="font-semibold">
             Trusted by homeowners and businesses
           </span>{" "}
           across the region for over 15 years.
-        </Text>
+        </Text> */}
       </Box>
     </SectionContainer>
   );

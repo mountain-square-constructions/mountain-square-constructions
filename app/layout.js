@@ -3,6 +3,7 @@ import "./globals.css";
 import Header, { SubHeader } from "./components/navigation-components/header";
 import Box from "./components/box";
 import Footer from "./components/navigation-components/footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 // const soucesans = SourceSans3({
 //   variable: "--font-SourceSans",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Box className="sticky top-0 z-50 bg-background shadow-md">
           <SubHeader />
         </Box>
+        <GoogleTagManager gtmId="GTM-TGZRHWNP" />
         {children}
         <Footer />
       </body>

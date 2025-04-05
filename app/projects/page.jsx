@@ -21,26 +21,26 @@ const Projects = () => {
         {
           id: 1,
           image: "/slider1.jpg",
-          location: "Lakeside Villa outside",
-          pin: "Beverly Hills",
+          location: "Lakeside Villa outside, Beverly Hills",
+          status: "Completed",
         },
         {
           id: 2,
           image: "/slider3.jpg",
-          location: "Modern Farmhouse Farmhouse,",
-          pin: "Napa Valley",
+          location: "Modern Farmhouse, Napa Valley",
+          status: "Completed/ongoing",
         },
         {
           id: 3,
           image: "/residentialproject.avif",
-          location: "Contemporary Estate Estate",
-          pin: "Malibu",
+          location: "Contemporary Estate, Malibu",
+          status: "Completed/ongoing",
         },
         {
           id: 4,
           image: "/individualhouse.jpeg",
-          location: "Mediterranean Mansion Mansion",
-          pin: "Santa Barbara",
+          location: "Mediterranean Mansion, Santa Barbara",
+          status: "Completed",
         },
       ],
     },
@@ -50,26 +50,26 @@ const Projects = () => {
         {
           id: 1,
           image: "/budget.jpg",
-          location: "Historic Townhouse Townhouse",
-          pin: "Boston",
+          location: "Historic Townhouse, Boston",
+          status: "Completed/ongoing",
         },
         {
           id: 2,
           image: "/standard.png",
-          location: "Industrial Loft Conversion",
-          pin: "Brooklyn",
+          location: "Industrial Loft Conversion, Brooklyn",
+          status: "Completed",
         },
         {
           id: 3,
           image: "/homepage-hero-img1.jpg",
-          location: "Victorian Restoration",
-          pin: "San Francisco",
+          location: "Victorian Restoration, San Francisco",
+          status: "Completed/ongoing",
         },
         {
           id: 4,
           image: "/renovationhouse.avif",
-          location: "Commercial Building Revitalization",
-          pin: "Portland",
+          location: "Commercial Building Revitalization, Portland",
+          status: "Completed",
         },
       ],
     },
@@ -79,32 +79,32 @@ const Projects = () => {
         {
           id: 1,
           image: "/slider2.jpg",
-          location: "Luxury Penthouse Penthouse",
-          pin: "Downtown Manhattan",
+          location: "Luxury Penthouse, Downtown Manhattan",
+          status: "Completed",
         },
         {
           id: 2,
           image: "/renovationhouse.avif",
-          location: "Minimalist Apartment Apartment",
-          pin: "Chicago",
+          location: "Minimalist Apartment, Chicago",
+          status: "Completed",
         },
         {
           id: 3,
           image: "/individualhouseprject3.jpeg",
-          location: "Executive Office Suite",
-          pin: "San Francisco",
+          location: "Executive Office Suite, San Francisco",
+          status: "Completed/ongoing",
         },
         {
           id: 4,
           image: "/individualhouseprject2.jpeg",
-          location: "Boutique Hotel Lobby",
-          pin: "Miami",
+          location: "Boutique Hotel Lobby, Miami",
+          status: "Completed",
         },
         {
           id: 5,
           image: "/bestquality.jpg",
-          location: "Restaurant Redesign",
-          pin: "Seattle",
+          location: "Restaurant Redesign, Seattle",
+          status: "Completed/ongoing",
         },
       ],
     },
@@ -114,26 +114,26 @@ const Projects = () => {
         {
           id: 1,
           image: "/budget.jpg",
-          location: "Historic Townhouse Townhouse",
-          pin: "Boston",
+          location: "Historic Townhouse, Boston",
+          status: "Completed",
         },
         {
           id: 2,
           image: "/standard.png",
-          location: "Industrial Loft Conversion",
-          pin: "Brooklyn",
+          location: "Industrial Loft Conversion, Brooklyn",
+          status: "Completed/ongoing",
         },
         {
           id: 3,
           image: "/homepage-hero-img1.jpg",
-          location: "Victorian Restoration",
-          pin: "San Francisco",
+          location: "Victorian Restoration, San Francisco",
+          status: "Completed",
         },
         {
           id: 4,
           image: "/renovationhouse.avif",
-          location: "Commercial Building Revitalization",
-          pin: "Portland",
+          location: "Commercial Building Revitalization, Portland",
+          status: "Completed/ongoing",
         },
       ],
     },
@@ -174,12 +174,16 @@ const Projects = () => {
       {/* Main Content Section */}
       <SectionContainer className="py-16">
         <Box>
-          <Text
-            variant="h2"
-            className="text-3xl font-bold mb-8 text-center text-[#e64a27]"
-          >
-            Explore Our Completed and Ongoing Projects in Bangalore
-          </Text>
+          <Box className="relative">
+            <Text
+              variant="h2"
+              className="text-3xl font-bold mb-8 text-center text-[#e64a27] "
+            >
+              Explore Our Completed and Ongoing Projects in Bangalore
+            </Text>
+          </Box>
+          <Box className="border-b-2 border-dotted my-10" />
+
           <Box>
             {projectCategories.map((category, index) => (
               <Box key={index} className="">
@@ -204,14 +208,16 @@ const Projects = () => {
                           className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       </Box>
-                      <Box className="p-3">
-                        <Text className="mt-3 text-lg font-bold flex items-center gap-x-2">
-                          <MapPinHouse fill="#e64a27" stroke="#fff" />
+                      <Box className="p-3 flex flex-col">
+                        <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
+                          {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
+                          <span className="text-[#e64a27]">Location:</span>{" "}
                           {project.location}
                         </Text>
-                        <Text className="mt-3 text-lg font-bold flex items-center gap-x-2">
-                          <MapPin fill="#e64a27" stroke="#fff" />
-                          {project.pin}
+                        <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
+                          {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
+                          <span className="text-[#e64a27]">Status: </span>
+                          {project.status}
                         </Text>
                       </Box>
                     </Box>

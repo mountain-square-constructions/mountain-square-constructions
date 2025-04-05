@@ -3,7 +3,6 @@ import SectionContainer from "../components/section-container";
 import Box from "../components/box";
 import Text from "../components/text";
 import { CircleCheck } from "lucide-react";
-import Link from "next/link";
 
 const Thankyou = () => {
   return (
@@ -14,13 +13,12 @@ const Thankyou = () => {
             {" "}
             <CircleCheck fill="#e64a27" size="100" stroke="#fff" />
           </Box>
-          <Text variant="h2"> Thankyou for Submitting </Text>
-          <Text>You have successfully submitted the data</Text>
-          <Text>Soon, We will get back to you</Text>
-          <Link href="/" className="text-blue-500 underline font-semibold">
-            {" "}
-            Go Back to Homepage
-          </Link>
+          <Text variant="h2"> Thank You for Submitting Your Details!</Text>
+          <Text>
+            One of our agent will be in touch with you shortly to discuss your
+            project.
+          </Text>
+          <Text>We look forward to helping you build your vision!</Text>
         </Box>
       </Box>
     </SectionContainer>

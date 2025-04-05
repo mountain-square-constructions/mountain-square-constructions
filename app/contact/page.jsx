@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import SectionContainer from "../components/section-container";
 import Box from "../components/box";
@@ -8,6 +10,16 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 const Contact = () => {
+  const handleClick = (phoneNumber) => {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      // If screen is large (desktop), copy to clipboard
+      navigator.clipboard.writeText(phoneNumber);
+      alert("Phone number copied to clipboard!");
+    } else {
+      // If screen is small (mobile), open the dialer
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  };
   return (
     <>
       <Box className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
@@ -63,8 +75,9 @@ const Contact = () => {
                 <Text className="text-[25px] font-semibold mb-1">
                   Phone Number{" "}
                 </Text>
-                <Text>+91 90597 45631</Text>
-                <Text>+91 80744 81787</Text>
+                <Text onClick={() => handleClick("+91 83109 85053")}>
+                  +91 83109 85053
+                </Text>
               </Box>
             </Box>
             <Box className="flex items-start gap-x-8">

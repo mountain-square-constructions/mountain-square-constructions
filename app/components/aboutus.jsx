@@ -3,8 +3,15 @@ import SectionContainer from "./section-container";
 import Text from "./text";
 import Box from "./box";
 import Image from "next/image";
-import { Building, CalendarDays, HomeIcon, UserRound } from "lucide-react";
+import {
+  Building,
+  CalendarDays,
+  ChevronRight,
+  HomeIcon,
+  UserRound,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const AboutusSection = () => {
   const stats = [
@@ -33,8 +40,8 @@ const AboutusSection = () => {
         >
           About Us
         </Text>
-        <Box className="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-y-0 md:gap-x-20 items-center">
-          <Box>
+        <Box className="grid md:grid-cols-12 md:gap-y-0 md:gap-x-20 items-center">
+          {/* <Box>
             <Image
               src="/bestquality.jpg"
               alt="qualitybuilding"
@@ -42,8 +49,8 @@ const AboutusSection = () => {
               height={300}
               className="w-full h-[300px] rounded-3xl"
             />
-          </Box>
-          <Box>
+          </Box> */}
+          <Box className="md:col-span-9">
             <Text className="md:text-[23px] lg:text-[23px] font-bold text-[#f0542d]">
               Mountain square Construction
             </Text>
@@ -69,6 +76,14 @@ const AboutusSection = () => {
               satisfaction has earned us a trusted reputation in the industry.
               Let us build your future with quality and care.
             </Text>
+          </Box>
+          <Box className="md:col-span-3">
+            <Link
+              href="/about-us"
+              className="font-semibold underline text-[18px] flex items-center hover:scale-105 hover:gap-x-3 transistion-transform duration-300 ease-linear"
+            >
+              About Company <ChevronRight />
+            </Link>
           </Box>
         </Box>
       </SectionContainer>

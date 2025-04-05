@@ -6,13 +6,34 @@ import {
   Award,
   Building,
   CalendarDays,
+  Cog,
+  Construction,
   Eye,
+  HardHat,
   Sparkles,
   UserRound,
 } from "lucide-react";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const AboutUs = () => {
+  const stats = [
+    {
+      icon: CalendarDays,
+      value: "25+",
+      label: "Years Experience",
+    },
+    {
+      icon: Building,
+      value: "180+",
+      label: "Projects Completed",
+    },
+    {
+      icon: UserRound,
+      value: "500+",
+      label: "Happy Clients",
+    },
+  ];
   return (
     <>
       <SectionContainer>
@@ -56,35 +77,35 @@ const AboutUs = () => {
         </Text>
         <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-5 md:gap-y-20 my-10">
           {" "}
-          <Box className="bg-gradient-to-tr from-[#833ab4]/80 via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
+          <Box className="bg-gradient-to-tr from-[#833ab4]/80 via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl flex flex-col">
             <Text className="md:text-[25px] text-white lg:text-[25px] font-semibold mb-3 flex items-center gap-x-4">
               Construction of Independent/Individual Houses
             </Text>
-            <Text className=" text-white">
+            <Text className=" text-white mt-auto">
               We specialize in building custom homes that reflect your unique
               style and needs, ensuring quality craftsmanship and attention to
               detail in every project. From foundation to finishing touches, we
               bring your dream home to life.
             </Text>
           </Box>
-          <Box className="bg-gradient-to-bl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
+          <Box className="bg-gradient-to-bl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl flex flex-col">
             <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold flex items-center gap-x-4">
               Interior Design and Execution
             </Text>
 
-            <Text className=" text-white">
+            <Text className=" text-white mt-auto">
               Our expert designers create functional and aesthetically pleasing
               interiors, tailoring each space to suit your lifestyle. We handle
               everything from concept to execution, ensuring your vision is
               realized beautifully.
             </Text>
           </Box>
-          <Box className="bg-gradient-to-tl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
+          <Box className="bg-gradient-to-tl from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl flex flex-col">
             <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold text-center flex items-center  gap-x-4">
               {" "}
               2D & 3D Architectural Planning
             </Text>
-            <Text className=" text-white">
+            <Text className=" text-white mt-auto">
               {" "}
               We provide detailed 2D and 3D architectural plans to give you a
               clear vision of your project before construction begins. Our
@@ -93,12 +114,12 @@ const AboutUs = () => {
             </Text>{" "}
           </Box>
           <Box className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#d9420f] p-7 rounded-xl">
-            <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold text-center flex items-center justify-start gap-x-4">
+            <Text className="text-white mb-2 md:text-[25px] lg:text-[25px] font-semibold flex flex-col">
               {" "}
               {/* <Sparkles fill="#fff" className="mb-3" /> */}
               Renovation and Remodeling of Existing Buildings
             </Text>
-            <Text className=" text-white">
+            <Text className=" text-white mt-auto">
               {" "}
               We breathe new life into old spaces through expert renovation and
               remodeling services. Whether updating interiors or enhancing
@@ -152,55 +173,35 @@ const AboutUs = () => {
           </Box>
         </Box>
 
-        <Box className="bg-background shadow-lg py-5 rounded-2xl xl:rounded-full px-0 md:px-32 mt-14">
-          <Box className="flex flex-row flex-wrap gap-10 justify-evenly md:justify-between items-center">
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <CalendarDays
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  25 +{" "}
-                </Text>
-              </Box>
-              <Text className="text-[30px] xl:text-[40px] font-medium text-center">
-                Experience
-              </Text>
-            </Box>
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <Building
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  180 +{" "}
-                </Text>
-              </Box>
-              <Text className=" text-[30px] xl:text-[40px]  font-medium text-center">
-                Projects
-              </Text>
-            </Box>
-            <Box>
-              <Box className="flex items-center gap-x-3">
-                <UserRound
-                  fill="#f0542d"
-                  className="mx-auto"
-                  size={50}
-                  stroke="#fff"
-                />
-                <Text className="text-[35px] xl:text-[50px] font-bold text-[#f0542d] leading-8">
-                  500 +{" "}
-                </Text>
-              </Box>
-              <Text className="text-[30px] xl:text-[40px]  font-medium text-center">
-                Happy Clients
-              </Text>
+        <Box className="mx-auto px-4 py-4">
+          <Box className="bg-background shadow-xl py-8 px-6 md:px-10 lg:px-16 rounded-2xl xl:rounded-[30px]">
+            <Box className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-4 lg:gap-x-8">
+              {stats.map((stat, index) => (
+                <Box
+                  key={index}
+                  className={cn(
+                    "flex flex-col items-center justify-center text-center",
+                    "md:border-r-0 md:last:border-r-0",
+                    index !== stats.length - 1 &&
+                      "md:border-r-2 md:border-gray-200"
+                  )}
+                >
+                  <Box className="flex items-center justify-center gap-x-3 mb-2">
+                    <stat.icon
+                      fill="#f0542d"
+                      size={42}
+                      className="flex-shrink-0"
+                      stroke="#fff"
+                    />
+                    <Text className="text-[32px] sm:text-[40px] xl:text-[50px] font-bold text-[#f0542d] leading-tight">
+                      {stat.value}
+                    </Text>
+                  </Box>
+                  <Text className="text-[22px] sm:text-[26px] xl:text-[32px] font-medium text-center">
+                    {stat.label}
+                  </Text>
+                </Box>
+              ))}
             </Box>
           </Box>
         </Box>
@@ -213,37 +214,11 @@ const AboutUs = () => {
             {" "}
             Our Team
           </Text>
-          <Box className="grid grid-cols-3 gap-x-3">
-            <Box className="bg-white shadow-lg">
-              <Image
-                src="/blankperson.jpg"
-                alt="blankperson"
-                width={200}
-                height={400}
-                className="w-full h-auto"
-              />
-              <Text className="text-[30px] text-center">Masthan Reddy</Text>
-            </Box>
-            <Box className="bg-white shadow-lg">
-              <Image
-                src="/blankperson.jpg"
-                alt="blankperson"
-                width={200}
-                height={400}
-                className="w-full h-auto"
-              />
-              <Text className="text-[30px] text-center">Masthan Reddy</Text>
-            </Box>
-            <Box className="bg-white shadow-lg">
-              <Image
-                src="/blankperson.jpg"
-                alt="blankperson"
-                width={200}
-                height={400}
-                className="w-full h-auto"
-              />
-              <Text className="text-[30px] text-center">Masthan Reddy</Text>
-            </Box>
+          <Box className="flex items-center justify-center my-20">
+            <Text className="text-[18px] font-medium flex items-center gap-x-3">
+              Under construction
+              <Construction fill="#e64a27" stroke="#e64a27" size={30} />
+            </Text>
           </Box>
         </Box>
       </SectionContainer>
