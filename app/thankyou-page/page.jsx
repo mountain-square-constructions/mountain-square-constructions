@@ -4,6 +4,12 @@ import Box from "../components/box";
 import Text from "../components/text";
 import { CircleCheck } from "lucide-react";
 
+export const metadata = {
+  title: "Thanking You - Mountain Square Construction.",
+  description: `Thanks for connecting with the Mountain Square Construction`,
+  Keywords: `Mountain Square Construction services, consultaion, Quotations, Quote for building services, construction expertise, Thankyou.`,
+};
+
 const Thankyou = () => {
   return (
     <SectionContainer>

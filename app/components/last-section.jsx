@@ -35,7 +35,7 @@ const CTASection = () => {
           <Box className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
             <Button
               size="lg"
-              className="bg-[#f0542d] hover:bg-[#d94020] text-white py-6 px-8 text-lg rounded-lg shadow-lg transition-transform hover:scale-105"
+              className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] hover:bg-[#f0542d]/90 hover:bg-[#d94020] text-white py-6 px-8 text-lg rounded-lg shadow-lg transition-transform hover:scale-105"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />

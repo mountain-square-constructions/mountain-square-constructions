@@ -13,6 +13,12 @@ import {
   Warehouse,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Our Projects - Mountain Square Construction",
+  description: `Explore our portfolio of successful residential, commercial, and industrial projects completed by Mountain Square Construction. See how we bring visions to life with quality craftsmanship.`,
+  Keywords: `Mountain Square Construction projects, residential projects, commercial construction, industrial projects, project portfolio, building construction`,
+};
+
 const Projects = () => {
   const projectCategories = [
     {

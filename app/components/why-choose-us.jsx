@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Box from "./box";
 import Text from "./text";
+import { ChevronRight } from "lucide-react";
 
 const tabItems = [
   {
@@ -48,7 +49,7 @@ const WhyChooseUs = () => {
     <SectionContainer className="py-6">
       {/* Main Content */}
       <Box className="container mx-auto px-4 py-16">
-        <h2 className="text-center md:text-[35px] lg:text-[35px] tracking-wider font-bold mb-10">
+        <h2 className="text-center md:text-[30px] lg:text-[30px] tracking-wider font-bold mb-10">
           Why Choose Us
         </h2>
 
@@ -61,12 +62,17 @@ const WhyChooseUs = () => {
                 key={index}
                 value={index.toString()}
                 className={cn(
-                  "w-full text-left justify-start p-4 rounded-lg transition-all duration-300 border-l-4 text-[25px] font-semibold",
+                  "w-full text-left justify-between items-center p-4 rounded-lg transition-all duration-300 border-l-4 text-[25px] font-semibold flex",
                   "data-[state=active]:bg-[#f0542d] data-[state=active]:text-white data-[state=active]:border-white",
                   "hover:bg-[#f0542d]/30 bg-white shadow-lg border-transparent"
                 )}
               >
-                {tab.title}
+                <span>{tab.title}</span>
+                <ChevronRight
+                  className={cn(
+                    "transition-opacity duration-300 ml-2 text-white"
+                  )}
+                />
               </TabsTrigger>
             ))}
           </TabsList>

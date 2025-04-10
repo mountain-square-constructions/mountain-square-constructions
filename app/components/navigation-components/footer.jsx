@@ -22,20 +22,21 @@ const Footer = () => {
   };
 
   return (
-    <Box className="bg-[#f0542d]">
+    <Box className="bg-[#833ab4]/20">
       <SectionContainer>
         <Box className="flex flex-col !space-y-10 md:space-y-0 md:flex-row md:justify-between md:items-start">
           <Box className="">
             <Box className="flex flex-col justify-center items-center w-full lg:w-auto ">
               <Image
-                src="/mountain-square-white-logo.png"
+                src="/mountain-square-logo.png"
                 alt="logo"
                 width={150}
                 height={130}
                 priority
+                className="rounded-full"
               />
               <Box className="flex flex-col">
-                <Text className="text-[20px] font-medium text-center max-w-sm text-white mt-3">
+                <Text className="text-[20px] font-medium text-center max-w-sm mt-3">
                   {" "}
                   Delivering high-quality, innovative construction projects with
                   precision and care.
@@ -44,10 +45,10 @@ const Footer = () => {
             </Box>
           </Box>
           <Box className="mr-0 md:mr-10">
-            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
+            <Text className="text-[20px] font-bold  mb-0 md:mb-3">
               Quick Links
             </Text>
-            <ul className="space-y-3 text-[18px] font-medium text-white ml-5 md:ml-2">
+            <ul className="space-y-3 text-[18px] font-medium ml-5 md:ml-2">
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/">Home</Link>
@@ -71,11 +72,11 @@ const Footer = () => {
             </ul>
           </Box>
           <Box className="">
-            <Text className="text-[20px] font-bold text-white mb-0 md:mb-3">
+            <Text className="text-[20px] font-bold mb-0 md:mb-3">
               {" "}
               Services
             </Text>
-            <ul className="space-y-3 text-[18px] font-medium text-white ml-5 md:ml-2">
+            <ul className="space-y-3 text-[18px] font-medium ml-5 md:ml-2">
               <li className="relative group max-w-fit">
                 <Link href="/services">Construction of Individual Houses</Link>
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
@@ -95,8 +96,8 @@ const Footer = () => {
             </ul>
           </Box>
         </Box>
-        <Box className="border-b bg-white w-full my-5" />
-        <Box className="text-[18px] font-medium text-white flex flex-col md:flex-row gap-3 md:items-center justify-between">
+        {/* <Box className="border-b border-[#d9420f] w-full my-3" /> */}
+        <Box className="text-[18px] font-medium text-white flex flex-col md:flex-row gap-3 mt-3 md:items-center justify-between bg-[#d9420f] px-2 py-3 rounded-lg">
           <Button
             variant="outline"
             className="bg-transparent hover:bg-transparent/10 rounded-none w-fit ml-5 md:ml-0"
@@ -128,8 +129,8 @@ const Footer = () => {
             +91 83109 85053
           </Text>
         </Box>
-        <Box className="border-b bg-white w-full my-5" />
-        <Box className="flex flex-col md:flex-row md:items-center justify-between mt-5 text-white font-normal text-[14px]">
+        {/* <Box className="border-b border-[#d9420f] w-full my-3" /> */}
+        <Box className="flex flex-col md:flex-row md:items-center justify-between text-white font-normal mt-3 text-[14px] bg-[#d9420f] px-2 py-3 rounded-lg">
           <Text className="text-[16px]">
             © 2025 mountainsquareconstruction.com All rights reserved.
           </Text>

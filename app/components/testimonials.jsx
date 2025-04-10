@@ -54,6 +54,26 @@ const testimonialData = [
     role: "Project Director",
     image: "/testimonial.png",
   },
+  {
+    id: 5,
+    title: "Extremely happy the way you built!",
+    rating: 5,
+    description:
+      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
+    author: "Jenisson",
+    role: "Project Director",
+    image: "/testimonial.png",
+  },
+  {
+    id: 6,
+    title: "Extremely happy the way you built!",
+    rating: 5,
+    description:
+      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
+    author: "Jenisson",
+    role: "Project Director",
+    image: "/testimonial.png",
+  },
 ];
 
 const Testimonials = () => {

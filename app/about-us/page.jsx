@@ -16,6 +16,12 @@ import {
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
+export const metadata = {
+  title: "About Mountain Square Construction",
+  description: `Learn more about Mountain Square Construction, a trusted leader in residential, commercial, and industrial construction. Our experience, innovation, and craftsmanship define our success.`,
+  Keywords: `About Mountain Square Construction, Mountain Square company, trusted construction company, building expertise, innovative construction solutions, sustainable construction practices.`,
+};
+
 const AboutUs = () => {
   const stats = [
     {

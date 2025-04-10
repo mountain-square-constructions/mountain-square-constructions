@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import SectionContainer from "../components/section-container";
 import Box from "../components/box";
@@ -8,24 +6,21 @@ import Text from "../components/text";
 import ContactForm from "../components/contact-form";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import PhoneButton from "../components/phonebutton";
+
+export const metadata = {
+  title: "Contact Mountain Square Construction",
+  description: `Get in touch with Mountain Square Construction for all your residential, commercial, and industrial project inquiries. We’re ready to help you build your future.`,
+  Keywords: `Contact Mountain Square Construction, get in touch with Mountain Square, contact construction experts, construction project inquiries`,
+};
 
 const Contact = () => {
-  const handleClick = (phoneNumber) => {
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      // If screen is large (desktop), copy to clipboard
-      navigator.clipboard.writeText(phoneNumber);
-      alert("Phone number copied to clipboard!");
-    } else {
-      // If screen is small (mobile), open the dialer
-      window.location.href = `tel:${phoneNumber}`;
-    }
-  };
   return (
     <>
       <Box className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
         {/* Background Image */}
         <Image
-          src="/contact.jpeg"
+          src="/handshake.avif"
           alt="Projects Background"
           fill
           className="object-cover object-center"
@@ -69,17 +64,10 @@ const Contact = () => {
                 </Text>
               </Box>
             </Box>
-            <Box className="flex items-start gap-x-8 mb-10">
-              <Phone size={50} fill="#e64a27" stroke="#fff" />
-              <Box>
-                <Text className="text-[25px] font-semibold mb-1">
-                  Phone Number{" "}
-                </Text>
-                <Text onClick={() => handleClick("+91 83109 85053")}>
-                  +91 83109 85053
-                </Text>
-              </Box>
-            </Box>
+            {/* Using the client component for phone button */}
+            <PhoneButton phoneNumber="+91 83109 85053">
+              +91 83109 85053
+            </PhoneButton>
             <Box className="flex items-start gap-x-8">
               <Mail size={50} fill="#e64a27" stroke="#fff" />
               <Box>
@@ -106,3 +94,4 @@ const Contact = () => {
 };
 
 export default Contact;
+// onClick={() => handleClick("+91 83109 85053")}

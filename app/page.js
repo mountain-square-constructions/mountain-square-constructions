@@ -9,6 +9,7 @@ import AboutusSection from "./components/aboutus";
 import Testimonials from "./components/testimonials";
 import CTASection from "./components/last-section";
 import HowWeWorkSection from "./components/how-we-work";
+import CountUp from "./components/static-counters";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       {/* <WhoWeAre />
       <WhatWeDo /> */}
       <AboutusSection />
+      <CountUp />
       <ServicesOffered />
       <Projects />
       <WhyChooseUs />
