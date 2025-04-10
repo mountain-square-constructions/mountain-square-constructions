@@ -213,7 +213,7 @@ const CountUp = () => {
       <Box className="bg-[#833ab4]/20 py-12">
         <SectionContainer className="py-0">
           <Box className="w-full flex flex-col items-center">
-            <Text
+            {/* <Text
               variant="h2"
               className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] inline-block text-transparent bg-clip-text text-center text-[30px] md:text-[35px] lg:text-[40px] font-bold mb-2"
             >
@@ -221,7 +221,7 @@ const CountUp = () => {
             </Text>
             <Text className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] inline-block text-transparent bg-clip-text md:text-[23px] lg:text-[23px] font-bold mb-5">
               We are the Best Construction Company In Bangalore
-            </Text>
+            </Text> */}
           </Box>
           <Box className="mx-auto px-4">
             <Box className="bg-white shadow-xl py-8 px-6 md:px-10 lg:px-16 rounded-2xl xl:rounded-[30px]">

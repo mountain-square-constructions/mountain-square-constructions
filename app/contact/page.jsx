@@ -7,6 +7,7 @@ import ContactForm from "../components/contact-form";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import PhoneButton from "../components/phonebutton";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: "Contact Mountain Square Construction",
@@ -54,7 +55,7 @@ const Contact = () => {
             <Text variant="h2" className="text-[#e64a27] mb-5">
               Visit us to explore our projects.
             </Text>
-            <Box className="flex items-start gap-x-8 mb-10">
+            <Box className="flex items-start gap-x-8 ">
               <MapPin size={80} fill="#e64a27" stroke="#fff" />
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Address</Text>
@@ -62,8 +63,21 @@ const Contact = () => {
                   Sy no 1 Rama Reddy building Hulimangala panchayat Jigani hobli
                   Anekal taluk Bangalore 560100
                 </Text>
+                <Button
+                  variant="outline"
+                  className="bg-transparent hover:bg-transparent/10 rounded-none mb-10"
+                >
+                  <Link
+                    className="!font-semibold text-[18px] text-[#e64a27]"
+                    href="https://www.google.com/maps/place/Hulimangala/@12.8202881,77.6374595,21z/data=!4m14!1m7!3m6!1s0x3bae6b33355ff423:0x1533cdb66f43998f!2sRama+Reddy+Building!8m2!3d12.7883295!4d77.6309192!16s%2Fg%2F11q3ltljdt!3m5!1s0x3bae6b00347d8c2f:0x5cc42e1525647ca6!8m2!3d12.8203779!4d77.6374981!16s%2Fg%2F11wtzsvxrx?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"
+                    target="blank"
+                  >
+                    Click here to view on Google Maps
+                  </Link>
+                </Button>
               </Box>
             </Box>
+
             {/* Using the client component for phone button */}
             <PhoneButton phoneNumber="+91 83109 85053">
               +91 83109 85053

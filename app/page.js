@@ -21,8 +21,9 @@ export default function Home() {
       <CountUp />
       <ServicesOffered />
       <Projects />
-      <WhyChooseUs />
       <HowWeWorkSection />
+      <WhyChooseUs />
+
       <Testimonials />
       <CTASection />
       {/* <ContactSection /> */}

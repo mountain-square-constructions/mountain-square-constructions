@@ -78,7 +78,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <Box className="bg-lightbackground/50 ">
+    <Box className="bg-[#833ab4]/20">
       <SectionContainer className="py-0 md:py-12">
         <Box className="flex flex-col items-center">
           <Text

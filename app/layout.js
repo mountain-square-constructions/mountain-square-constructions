@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-TGZRHWNP"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            className="hidden invisible"
           ></iframe>
         </noscript>
 
