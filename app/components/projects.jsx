@@ -99,9 +99,18 @@ const Projects = () => {
                   className="object-cover"
                 />
               </div>
-              <Text className="font-semibold text-[20px] p-5">
-                Verner's House, Jayanagar, Bangalore
-              </Text>
+              <Box className="p-3 flex flex-col">
+                <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
+                  {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Location:</span> Lakeside
+                  Villa outside, Beverly Hills,
+                </Text>
+                <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
+                  {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Status: </span>
+                  completed
+                </Text>
+              </Box>
             </Box>
 
             {/* Project Card 2 */}
@@ -114,9 +123,18 @@ const Projects = () => {
                   className="object-cover"
                 />
               </div>
-              <Text className="font-semibold text-[20px] p-5">
-                Allen poper's House, Jayanagar, Bangalore
-              </Text>
+              <Box className="p-3 flex flex-col">
+                <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
+                  {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Location:</span> Villa
+                  outside, Beverly Hills,
+                </Text>
+                <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
+                  {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Status: </span>
+                  Ongoing
+                </Text>
+              </Box>
             </Box>
 
             {/* Project Card 3 */}
@@ -129,9 +147,18 @@ const Projects = () => {
                   className="object-cover"
                 />
               </div>
-              <Text className="font-semibold text-[20px] p-5">
-                Rajesh House, Jayanagar, Bangalore
-              </Text>
+              <Box className="p-3 flex flex-col">
+                <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
+                  {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Location:</span> Lakeside
+                  Villa outside, Beverly Hills,
+                </Text>
+                <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
+                  {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
+                  <span className="text-[#e64a27]">Status: </span>
+                  completed/ongoing
+                </Text>
+              </Box>
             </Box>
           </Box>
 

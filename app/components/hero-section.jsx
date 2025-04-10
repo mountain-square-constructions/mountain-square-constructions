@@ -6,6 +6,7 @@ import SectionContainer from "./section-container";
 import Box from "./box";
 import Text from "./text";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -154,7 +155,7 @@ const HeroSection = () => {
             Ready to Build Your Dream Home?
           </Text>
           <Button className="rounded-lg transition duration-300 ease-in-out transform hover:scale-105 h-12 sm:h-14 text-lg sm:text-xl px-8 bg-amber-500 hover:bg-amber-600 text-black font-bold">
-             Contact Us
+            <Link href="/contact">  Contact Us</Link>
           </Button>
         </SectionContainer>
       </Box>

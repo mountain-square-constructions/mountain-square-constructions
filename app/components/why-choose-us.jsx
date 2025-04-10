@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                 <TabsContent
                   key={index}
                   value={index.toString()}
-                  className="relative h-[350px] rounded-2xl overflow-hidden m-0 bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4]"
+                  className="relative h-[350px] rounded-2xl overflow-hidden m-0 bg-gradient-to-br from-[#833ab4] via-[#d9420f]/70 to-[#833ab4]"
                 >
                   {/* <Box
                     className="absolute inset-0 w-full h-full"

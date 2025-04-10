@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import WhyChooseUs from "../components/why-choose-us";
 
 export const metadata = {
   title: "About Mountain Square Construction",
@@ -48,7 +49,7 @@ const AboutUs = () => {
             About us
           </Text>
           <Text className="md:text-[40px] lg:text-[40px] text-center font-bold text-[#f0542d]">
-            Mountain square Construction
+            Mountain Square Construction
           </Text>
           <Text className="md:text-[25px] lg:text-[25px] font-semibold text-center text-[#f0542d]">
             We Build Your Dream
@@ -135,7 +136,10 @@ const AboutUs = () => {
           </Box>
         </Box>
       </SectionContainer>
-      <SectionContainer className="pt-0">
+      <Box>
+        <WhyChooseUs />
+      </Box>
+      <SectionContainer className="pt-0 mt-10">
         <Box className="grid grid-cols-1 md:grid-cols-2  gap-x-20">
           <Box className="text-center">
             {/* <Eye size={100} fill="#e64a27" stroke="#fff" className="mx-auto" /> */}
