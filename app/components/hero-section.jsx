@@ -150,7 +150,7 @@ const HeroSection = () => {
             At Mountain Square Constructions, we create exceptional spaces with
             precision and care.
           </Text>
-          <Text className="text-white/90 text-md md:text-lg lg:text-xl max-w-2xl mx-auto my-4">
+          <Text className="text-white/90 text-md md:text-3xl lg:text-4xl max-w-2xl mx-auto my-4">
             Ready to Build Your Dream Home?
           </Text>
           <Button className="rounded-lg transition duration-300 ease-in-out transform hover:scale-105 h-12 sm:h-14 text-lg sm:text-xl px-8 bg-amber-500 hover:bg-amber-600 text-black font-bold">
