@@ -38,6 +38,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${sourceSans.variable} ${roboto.variable}`}>
       <body className="font-sans antialiased">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TGZRHWNP"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
+
         <Header />
         <Box className="sticky top-0 z-50 bg-background shadow-md">
           <SubHeader />
