@@ -183,7 +183,7 @@ const CountUp = () => {
   const stats = [
     {
       icon: CalendarDays,
-      value: "25+",
+      value: "10+",
       label: "Years Experience",
     },
     {

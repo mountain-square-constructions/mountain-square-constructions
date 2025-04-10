@@ -26,7 +26,7 @@ const AboutUs = () => {
   const stats = [
     {
       icon: CalendarDays,
-      value: "25+",
+      value: "10+",
       label: "Years Experience",
     },
     {

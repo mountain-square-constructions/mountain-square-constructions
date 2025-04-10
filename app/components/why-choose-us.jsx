@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                 <TabsContent
                   key={index}
                   value={index.toString()}
-                  className="relative h-[350px] rounded-2xl overflow-hidden m-0"
+                  className="relative h-[350px] rounded-2xl overflow-hidden m-0 bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4]"
                 >
                   {/* <Box
                     className="absolute inset-0 w-full h-full"
@@ -102,10 +102,10 @@ const WhyChooseUs = () => {
                     }}
                   > */}
                   {/* Backdrop overlay */}
-                  <Box className="absolute inset-0 bg-white"></Box>
+                  {/* <Box className="absolute inset-0 bg-white"></Box> */}
 
                   {/* Content */}
-                  <Box className="relative z-10 h-full flex flex-col justify-center p-8">
+                  <Box className="relative z-10 h-full flex flex-col justify-center p-8 text-white">
                     <Text variant="h3" className="text-3xl font-bold mb-6">
                       {tab.title}
                     </Text>

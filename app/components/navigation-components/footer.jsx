@@ -98,7 +98,7 @@ const Footer = () => {
         </Box>
         <Box className="flex flex-col md:flex-row md:items-center justify-between text-white font-normal mt-5 text-[14px] bg-[#d9420f] px-2 py-3 rounded-lg ">
           <Text className="text-[16px]">
-            © 2025 mountainsquareconstruction.com All rights reserved.
+            © 2025 mountainsquare All rights reserved.
           </Text>
           <Text className="ml-5 md:ml-0 !whitespace-normal text-wrap">
             {" "}
