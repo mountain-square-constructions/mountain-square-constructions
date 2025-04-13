@@ -69,71 +69,74 @@ const Contact = () => {
           </SectionContainer>
         </Box>
       </Box>
-
-      <SectionContainer>
-        <Box className="md:grid md:grid-cols-12 md:gapx-10">
-          <Box className="md:col-span-5 pr-11">
-            <Text variant="h2" className="text-[#e64a27] mb-5">
-              Visit us to explore our projects.
-            </Text>
-            <Box className="flex items-start gap-x-8 ">
-              <MapPin
-                size={80}
-                fill="#e64a27"
-                stroke="#fff"
-                className="w-11 h-11 xl:w-16 xl:h-16"
-              />
-              <Box>
-                <Text className="text-[25px] font-semibold mb-1">Address</Text>
-                <Text>
-                  Sy no 1, Rama Reddy building,Hulimangala Gram panchayath -
-                  RJ9P+GQC, Karnataka 560105
-                </Text>
-                <Button
-                  variant="outline"
-                  className="bg-transparent border-2 border-muted-foreground rounded-md hover:bg-transparent/10 h-12 md:h-10 mb-10"
-                >
-                  <Link
-                    className="!font-semibold text-[18px] text-[#e64a27] whitespace-break-spaces"
-                    href="https://maps.app.goo.gl/icuipqdJVKawJaVH7?g_st=aw"
-                    target="blank"
+      <Box className="bg-[#ECECEB]">
+        <SectionContainer>
+          <Box className="md:grid md:grid-cols-12 md:gapx-10">
+            <Box className="md:col-span-5 pr-11">
+              <Text variant="h2" className="text-[#e64a27] mb-5">
+                Visit us to explore our projects.
+              </Text>
+              <Box className="flex items-start gap-x-8 ">
+                <MapPin
+                  size={80}
+                  fill="#e64a27"
+                  stroke="#ECECEB"
+                  className="w-11 h-11 xl:w-16 xl:h-16"
+                />
+                <Box>
+                  <Text className="text-[25px] font-semibold mb-1">
+                    Address
+                  </Text>
+                  <Text>
+                    Sy no 1, Rama Reddy building, Hulimangala Gram panchayath,
+                    Karnataka 560105
+                  </Text>
+                  <Button
+                    variant="outline"
+                    className="bg-transparent border-2 border-muted-foreground rounded-md hover:bg-transparent/10 h-12 md:h-10 mb-10"
                   >
-                    Click here to view on Google Maps
-                  </Link>
-                </Button>
+                    <Link
+                      className="!font-semibold text-[18px] text-[#e64a27] whitespace-break-spaces"
+                      href="https://maps.app.goo.gl/icuipqdJVKawJaVH7?g_st=aw"
+                      target="blank"
+                    >
+                      Click here to view on Google Maps
+                    </Link>
+                  </Button>
+                </Box>
               </Box>
-            </Box>
 
-            {/* Using the client component for phone button */}
-            <PhoneButton phoneNumber="+91 83109 85053">
-              +91 83109 85053
-            </PhoneButton>
-            <Box className="flex items-start gap-x-8">
-              <Mail
-                size={80}
-                fill="#e64a27"
-                stroke="#fff"
-                className="w-11 h-11 xl:w-12 xl:h-12"
-              />
-              <Box>
-                <Text className="text-[25px] font-semibold mb-1">Email</Text>
-                <Text>
-                  <Link href="mailto:contact@mountainsquareconstruction.com">
-                    {" "}
-                    contact@mountainsquarec onstruction.com
-                  </Link>
-                </Text>
+              {/* Using the client component for phone button */}
+              <PhoneButton phoneNumber="+91 83109 85053">
+                +91 83109 85053
+              </PhoneButton>
+              <Box className="flex items-start gap-x-8">
+                <Mail
+                  size={80}
+                  fill="#e64a27"
+                  stroke="#ECECEB"
+                  className="w-11 h-11 xl:w-12 xl:h-12"
+                />
+                <Box>
+                  <Text className="text-[25px] font-semibold mb-1">Email</Text>
+                  <Text>
+                    <Link href="mailto:contact@mountainsquareconstruction.com">
+                      {" "}
+                      contact@mountainsquarec onstruction.com
+                    </Link>
+                  </Text>
+                </Box>
               </Box>
             </Box>
+            <Box className=" md:col-span-7">
+              <Text variant="h2" className="text-[#e64a27] mb-5">
+                Get Started Today
+              </Text>
+              <ContactForm />
+            </Box>
           </Box>
-          <Box className=" md:col-span-7">
-            <Text variant="h2" className="text-[#e64a27] mb-5">
-              Get Started Today
-            </Text>
-            <ContactForm />
-          </Box>
-        </Box>
-      </SectionContainer>
+        </SectionContainer>
+      </Box>
     </>
   );
 };

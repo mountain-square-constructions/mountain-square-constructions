@@ -24,7 +24,7 @@ const PhoneButton = ({ phoneNumber, children }) => {
       <Phone
         size={80}
         fill="#e64a27"
-        stroke="#fff"
+        stroke="#ECECEB"
         className="w-11 h-11 xl:w-12 xl:h-12"
       />
       <div>

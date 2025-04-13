@@ -237,7 +237,7 @@ const Projects = () => {
       </Box>
 
       {/* Main Content Section */}
-      <Box className="bg-[#833ab4]/20">
+      <Box className="bg-[#ECECEB]">
         <SectionContainer className="py-16  ">
           <Box>
             <Box className="relative">

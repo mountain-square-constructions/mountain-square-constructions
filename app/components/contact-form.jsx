@@ -378,7 +378,7 @@ const ContactForm = ({
                   <FormControl>
                     <Input
                       placeholder="Enter Your First Name*"
-                      className="border-2 rounded-2xl border-gray-200 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
+                      className="border-2 rounded-2xl border-gray-400 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
                       {...field}
                       aria-label="First Name"
                     />
@@ -397,7 +397,7 @@ const ContactForm = ({
                     <Input
                       type="email"
                       placeholder="Enter Your Email*"
-                      className="border-2 rounded-2xl border-gray-200 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
+                      className="border-2 rounded-2xl border-gray-400 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
                       {...field}
                       aria-label="Email"
                     />
@@ -416,7 +416,7 @@ const ContactForm = ({
                     <Input
                       type="tel"
                       placeholder="Enter Your Phone Number*"
-                      className="border-2 rounded-2xl border-gray-200 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
+                      className="border-2 rounded-2xl border-gray-400 md:text-[20px] h-16 focus-visible:ring-0 focus-visible:ring-offset-0 py-0"
                       onChange={(e) => {
                         // Only allow digits
                         const value = e.target.value.replace(/\D/g, "");
@@ -442,7 +442,7 @@ const ContactForm = ({
                   <FormControl>
                     <Textarea
                       placeholder="Tell us about your requirements"
-                      className={`border-2 rounded-2xl border-gray-200 md:text-[20px] focus-visible:ring-0 focus-visible:ring-offset-0 py-2 px-2 w-full font-montserrat text-[14px] ${
+                      className={`border-2 rounded-2xl border-gray-400 md:text-[20px] focus-visible:ring-0 focus-visible:ring-offset-0 py-2 px-2 w-full font-montserrat text-[14px] ${
                         formType === "contact"
                           ? "min-h-[150px]"
                           : "min-h-[100px]"
