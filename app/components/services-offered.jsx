@@ -86,10 +86,8 @@ const ServicesOffered = () => {
             Services, We are Offering
           </Text>
           <ul className="list-disc ml-7 space-y-1 text-[18px] font-medium">
-            <li>We prepare all kind of design works for India& GCC</li>
             <li>Design and Development of concepts as per site condition</li>
             <li>Prepare Architectural, Interior and Detail drawings</li>
-            <li>Prepare MEP & Landscape Drawings.</li>
             <li>
               Taking approval from the related authorities (depend up on site
               location)
