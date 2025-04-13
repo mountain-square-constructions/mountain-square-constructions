@@ -28,6 +28,22 @@ export const metadata = {
     "innovative construction solutions",
     "sustainable construction practices",
   ],
+  openGraph: {
+    title: "About Mountain Square Construction",
+    description:
+      "Learn more about Mountain Square Construction, a trusted leader in residential, commercial, and industrial construction. Our experience, innovation, and craftsmanship define our success.",
+    url: "https://mountainsquareconstruction.com/",
+    siteName: "Mountain Square Construction",
+    images: [
+      {
+        url: "https://mountainsquareconstruction.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const AboutUs = () => {

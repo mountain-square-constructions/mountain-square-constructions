@@ -18,6 +18,22 @@ export const metadata = {
     "contact construction experts",
     "construction project inquiries",
   ],
+  openGraph: {
+    title: "Contact Mountain Square Construction",
+    description:
+      "Get in touch with Mountain Square Construction for all your residential, commercial, and industrial project inquiries. We’re ready to help you build your future.",
+    url: "https://mountainsquareconstruction.com/",
+    siteName: "Mountain Square Construction",
+    images: [
+      {
+        url: "https://mountainsquareconstruction.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const Contact = () => {

@@ -15,6 +15,22 @@ export const metadata = {
     "construction expertise",
     "quality construction services",
   ],
+  openGraph: {
+    title: "Our Services - Mountain Square Construction.",
+    description:
+      "Discover the range of construction services offered by Mountain Square Construction. From residential homes to large-scale commercial and industrial projects, we build with precision and care.",
+    url: "https://mountainsquareconstruction.com/",
+    siteName: "Mountain Square Construction",
+    images: [
+      {
+        url: "https://mountainsquareconstruction.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const Services = () => {
