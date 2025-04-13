@@ -66,7 +66,7 @@ const Footer = () => {
               </li>
               <li className="relative group max-w-fit">
                 {" "}
-                <Link href="/contact">Contact us</Link>
+                <Link href="/contact">Contact Us</Link>
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
             </ul>
