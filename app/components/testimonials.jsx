@@ -19,29 +19,30 @@ const testimonialData = [
     title: "Best Construction Service",
     rating: 4.5,
     description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
-    author: "Jenisson",
-    role: "Senior Project Manager",
+      "Mountain Square Construction is the best construction company in Bangalore. Highly recommended for anyone looking to turn their dream project into reality.",
+    author: "Mallikharjuna Rao",
+    role: "Electronic City, Bengaluru",
     image: "/testimonial.png",
   },
   {
     id: 2,
-    title: "Quality no 1",
+    title: "No 1 Quality House, I Got",
     rating: 5,
-    description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
-    author: "Tom Harris",
-    role: "Head of Project Management",
+    description: `
+I recently moved into my newly constructed home. The design and layout are exactly what I was looking for—modern, functional, and spacious. The finishes and materials used are of good quality, and the attention to detail is noticeable throughout the house.
+`,
+    author: "Nazama Shirur",
+    role: "Humlimangala, Bengaluru",
     image: "/testimonial.png",
   },
   {
     id: 3,
-    title: "Best Renovation I Got",
+    title: "Best Quality Construction Service",
     rating: 4.0,
     description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
-    author: "Emily Brown",
-    role: "Project Manager",
+      "Extremely satisfied with Mountain Square Construction's work on our home in Hulimangala!. The team was responsive throughout the project. Everything from foundation to finishing touches was done perfectly!",
+    author: "Prasanth",
+    role: "Hulimangala, Bengaluru",
     image: "/testimonial.png",
   },
   {
@@ -49,7 +50,7 @@ const testimonialData = [
     title: "Extremely happy the way you built!",
     rating: 5,
     description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
+      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions. I got the Best Construction",
     author: "Jenisson",
     role: "Project Director",
     image: "/testimonial.png",
@@ -100,7 +101,7 @@ const Testimonials = () => {
                   <Card
                     className={`p-5 object-center grid place-items-stretch shadow-md hover:shadow-lg dark:bg-detailcontrast rounded-[32px]`}
                   >
-                    <CardContent className="p-0 px-3">
+                    <CardContent className="p-0 px-3 flex flex-col">
                       {/* <Image
                         src="/testimonialquote.svg"
                         alt="testimonial Quote"
@@ -115,7 +116,7 @@ const Testimonials = () => {
                         {item.description}
                       </Text>
                       <Box className=" border-t border-dotted my-3 mt-6" />
-                      <Box className="flex items-center gap-x-5 ">
+                      <Box className="flex items-center gap-x-5 mt-auto">
                         <Image
                           src={item.image}
                           alt="testimonial"

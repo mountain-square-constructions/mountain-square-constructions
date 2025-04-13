@@ -74,7 +74,7 @@ const Contact = () => {
                 >
                   <Link
                     className="!font-semibold text-[18px] text-[#e64a27] whitespace-break-spaces"
-                    href="https://www.google.com/maps/place/Hulimangala/@12.8202881,77.6374595,21z/data=!4m14!1m7!3m6!1s0x3bae6b33355ff423:0x1533cdb66f43998f!2sRama+Reddy+Building!8m2!3d12.7883295!4d77.6309192!16s%2Fg%2F11q3ltljdt!3m5!1s0x3bae6b00347d8c2f:0x5cc42e1525647ca6!8m2!3d12.8203779!4d77.6374981!16s%2Fg%2F11wtzsvxrx?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"
+                    href="https://maps.app.goo.gl/icuipqdJVKawJaVH7?g_st=aw"
                     target="blank"
                   >
                     Click here to view on Google Maps

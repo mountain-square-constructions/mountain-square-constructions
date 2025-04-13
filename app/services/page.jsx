@@ -17,14 +17,14 @@ const Services = () => {
       title: "Construction of Independent/Individual Houses",
       description:
         "We specialize in crafting custom homes that perfectly reflect your unique style and needs. From the foundation to the final touches, we ensure exceptional quality and attention to detail, transforming your vision into a dream home that stands the test of time.",
-      img: "/slider1.jpg",
+      img: "/individualhouse.jpg",
     },
     {
       iconName: "PaintBucket", // String instead of component reference
       title: "Interior Design and Execution",
       description:
         "Our team of expert designers creates spaces that are both functional and visually stunning. Tailored to suit your lifestyle, we manage every aspect of the design and execution process to bring your vision to life with elegance and precision.",
-      img: "/interior/interior5.jpg",
+      img: "/interior.jpg",
     },
     {
       iconName: "Rotate3d", // String instead of component reference
@@ -38,7 +38,7 @@ const Services = () => {
       title: "Renovation and Remodeling of Existing Buildings",
       description:
         "Breathe new life into your existing spaces with our expert renovation and remodeling services. Whether enhancing interiors or updating structural elements, we help modernize and refresh your building while maintaining its character and integrity.",
-      img: "/renovationhouse.avif",
+      img: "/renovationofhouse.jpg",
     },
   ];
 

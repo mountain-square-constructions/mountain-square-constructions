@@ -133,7 +133,7 @@ export const SubHeader = () => {
     },
     {
       id: 5,
-      title: "Contact",
+      title: "Contact Us",
       href: "/contact-us",
     },
   ];
