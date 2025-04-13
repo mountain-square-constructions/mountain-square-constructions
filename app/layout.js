@@ -5,16 +5,6 @@ import Box from "./components/box";
 import Footer from "./components/navigation-components/footer";
 import { GoogleTagManager } from "@next/third-parties/google";
 
-// const soucesans = SourceSans3({
-//   variable: "--font-SourceSans",
-//   subsets: ["latin"],
-// });
-
-// const nunitoSans = NunitoSans({
-//   variable: "--font-nunitoSans",
-//   subsets: ["latin"],
-// });
-
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
   subsets: ["latin"],
@@ -51,7 +41,7 @@ export const metadata = {
     siteName: "Mountain Square Construction",
     images: [
       {
-        url: "/og-image.jpg", // Open Graph image
+        url: "https://mountainsquareconstruction.com/og-image.jpg",
         width: 1200,
         height: 630,
       },
