@@ -30,9 +30,6 @@ export const metadata = {
     "sustainable building",
     "professional contractors",
   ],
-  authors: [{ name: "Masthan Reddy" }],
-  creator: "Naga Prasanth",
-  publisher: "Naga Prasanth",
   openGraph: {
     title: "Mountain Square Construction | Bangalore",
     description:
