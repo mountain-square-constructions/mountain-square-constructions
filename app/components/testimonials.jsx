@@ -17,7 +17,7 @@ const testimonialData = [
   {
     id: 1,
     title: "Best Construction Service",
-    rating: 4.5,
+    rating: 5,
     description:
       "Mountain Square Construction is the best construction company in Bangalore. Highly recommended for anyone looking to turn their dream project into reality.",
     author: "Mallikharjuna Rao",
@@ -38,11 +38,11 @@ I recently moved into my newly constructed home. The design and layout are exact
   {
     id: 3,
     title: "Best Quality Construction Service",
-    rating: 4.0,
+    rating: 5,
     description:
       "Extremely satisfied with Mountain Square Construction's work on our home in Hulimangala!. The team was responsive throughout the project. Everything from foundation to finishing touches was done perfectly!",
     author: "Prasanth",
-    role: "Hulimangala, Bengaluru",
+    role: "Jayanagar, Bengaluru",
     image: "/testimonial.png",
   },
   {
