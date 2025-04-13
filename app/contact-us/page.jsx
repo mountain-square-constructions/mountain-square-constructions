@@ -12,7 +12,12 @@ import { Button } from "@/components/ui/button";
 export const metadata = {
   title: "Contact Mountain Square Construction",
   description: `Get in touch with Mountain Square Construction for all your residential, commercial, and industrial project inquiries. We’re ready to help you build your future.`,
-  Keywords: `Contact Mountain Square Construction, get in touch with Mountain Square, contact construction experts, construction project inquiries`,
+  Keywords: [
+    "Contact Mountain Square Construction",
+    "get in touch with Mountain Square",
+    "contact construction experts",
+    "construction project inquiries",
+  ],
 };
 
 const Contact = () => {

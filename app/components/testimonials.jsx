@@ -47,32 +47,22 @@ I recently moved into my newly constructed home. The design and layout are exact
   },
   {
     id: 4,
-    title: "Extremely happy the way you built!",
+    title: "Excellent Service from Start to Finish",
     rating: 5,
     description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions. I got the Best Construction",
-    author: "Jenisson",
-    role: "Project Director",
+      "Had a fantastic experience with MS Construction—professional, organized, and friendly. They kept us informed and made the whole process smooth and stress-free.",
+    author: "Shaik Afzal Ahammad",
+    role: "Electronic City, Bengaluru",
     image: "/testimonial.png",
   },
   {
     id: 5,
-    title: "Extremely happy the way you built!",
+    title: "Stress-Free Construction with Great Value",
     rating: 5,
     description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
-    author: "Jenisson",
-    role: "Project Director",
-    image: "/testimonial.png",
-  },
-  {
-    id: 6,
-    title: "Extremely happy the way you built!",
-    rating: 5,
-    description:
-      "The team was always responsive and kept us informed throughout the project. They were easy to communicate with and always willing to answer our questions.",
-    author: "Jenisson",
-    role: "Project Director",
+      "Needed a builder for my 1500 sq ft G+2. Saw 3 of their sites, got good feedback. Work done on time with great quality. Professional team. Stress-free and worth the price.",
+    author: "shaik zuber",
+    role: "Electronic City, Bengaluru",
     image: "/testimonial.png",
   },
 ];
@@ -115,7 +105,7 @@ const Testimonials = () => {
                       <Text className="text-lightforeground">
                         {item.description}
                       </Text>
-                      <Box className=" border-t border-dotted my-3 mt-6" />
+                      <Box className=" border-t border-dotted my-3 mt-auto" />
                       <Box className="flex items-center gap-x-5 mt-auto">
                         <Image
                           src={item.image}

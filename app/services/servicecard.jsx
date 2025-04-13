@@ -25,7 +25,7 @@ export const ServiceCard = ({
 
   return (
     <div
-      className="relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+      className="relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl bg-white"
       style={{ borderColor: brandColor }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

@@ -31,7 +31,34 @@ const roboto = Roboto({
 export const metadata = {
   title: "Mountain Square Construction | Bangalore",
   description: `Mountain Square Construction specializes in high-quality residential, commercial, and industrial projects. We deliver on-time, on-budget results with sustainable practices and exceptional craftsmanship.`,
-  Keywords: `Mountain Square Construction, quality construction, residential projects, commercial construction, industrial construction, sustainable building, professional contractors`,
+  keywords: [
+    "Mountain Square Construction",
+    "quality construction",
+    "residential projects",
+    "commercial construction",
+    "industrial construction",
+    "sustainable building",
+    "professional contractors",
+  ],
+  authors: [{ name: "Masthan Reddy" }],
+  creator: "Naga Prasanth",
+  publisher: "Naga Prasanth",
+  openGraph: {
+    title: "Mountain Square Construction | Bangalore",
+    description:
+      "Mountain Square Construction specializes in high-quality residential, commercial, and industrial projects. We deliver on-time, on-budget results with sustainable practices and exceptional craftsmanship.",
+    url: "https://mountainsquareconstruction.com/",
+    siteName: "Mountain Square Construction",
+    images: [
+      {
+        url: "/og-image.jpg", // Open Graph image
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

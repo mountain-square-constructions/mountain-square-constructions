@@ -7,7 +7,14 @@ import { ServiceCard } from "./servicecard";
 export const metadata = {
   title: "Our Services - Mountain Square Construction.",
   description: `Discover the range of construction services offered by Mountain Square Construction. From residential homes to large-scale commercial and industrial projects, we build with precision and care.`,
-  Keywords: `Mountain Square Construction services, residential construction services, commercial construction, industrial building services, construction expertise, quality construction services.`,
+  Keywords: [
+    "Mountain Square Construction services",
+    "residential construction services",
+    "commercial construction",
+    "industrial building services",
+    "construction expertise",
+    "quality construction services",
+  ],
 };
 
 const Services = () => {
@@ -17,7 +24,7 @@ const Services = () => {
       title: "Construction of Independent/Individual Houses",
       description:
         "We specialize in crafting custom homes that perfectly reflect your unique style and needs. From the foundation to the final touches, we ensure exceptional quality and attention to detail, transforming your vision into a dream home that stands the test of time.",
-      img: "/individualhouse.jpg",
+      img: "/projects.jpg",
     },
     {
       iconName: "PaintBucket", // String instead of component reference
@@ -73,20 +80,22 @@ const Services = () => {
           </SectionContainer>
         </Box>
       </Box>
-      <SectionContainer className="">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              iconName={service.iconName} // Pass iconName instead of icon
-              title={service.title}
-              image={service.img}
-              description={service.description}
-              brandColor={service.brandColor}
-            />
-          ))}
-        </div>
-      </SectionContainer>
+      <Box className="bg-[#ECECEB]">
+        <SectionContainer className="">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                iconName={service.iconName} // Pass iconName instead of icon
+                title={service.title}
+                image={service.img}
+                description={service.description}
+                brandColor={service.brandColor}
+              />
+            ))}
+          </div>
+        </SectionContainer>
+      </Box>
     </>
   );
 };
