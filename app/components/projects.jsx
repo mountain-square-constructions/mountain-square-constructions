@@ -108,7 +108,7 @@ const Projects = () => {
                 <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
                   {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
                   <span className="text-[#e64a27]">Status: </span>
-                  completed
+                  Completed
                 </Text>
               </Box>
             </Box>

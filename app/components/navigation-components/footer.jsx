@@ -5,9 +5,7 @@ import SectionContainer from "../section-container";
 import Box from "../box";
 import Text from "../text";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   const handleClick = (phoneNumber) => {
@@ -27,14 +25,16 @@ const Footer = () => {
         <Box className="flex flex-col !space-y-10 md:space-y-0 md:flex-row md:justify-between md:items-start">
           <Box className="">
             <Box className="flex flex-col justify-center items-center w-full lg:w-auto ">
-              <Image
-                src="/mountain-square-logo.png"
-                alt="logo"
-                width={150}
-                height={130}
-                priority
-                className="rounded-full"
-              />
+              <Link href="/">
+                <Image
+                  src="/mountain-square-logo.png"
+                  alt="logo"
+                  width={150}
+                  height={130}
+                  priority
+                  className="rounded-full"
+                />
+              </Link>
               <Box className="flex flex-col">
                 <Text className="text-[20px] font-medium text-center max-w-sm mt-3">
                   {" "}
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li className="relative group max-w-fit">
                 {" "}
-                <Link href="/about-us">About</Link>{" "}
+                <Link href="/about-us">About Us</Link>{" "}
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
@@ -98,7 +98,7 @@ const Footer = () => {
         </Box>
         <Box className="flex flex-col md:flex-row md:items-center justify-between text-white font-normal mt-5 text-[14px] bg-[#d9420f] px-2 py-3 rounded-lg ">
           <Text className="text-[16px]">
-            © 2025 mountainsquare All rights reserved.
+            © 2025 Mountain Square All rights reserved.
           </Text>
           <Text className="!whitespace-normal text-wrap">
             {" "}

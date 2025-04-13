@@ -38,14 +38,16 @@ const Header = () => {
           <Box className="flex flex-col lg:flex-row justify-between items-center gap-4">
             {/* Logo */}
             <Box className="flex justify-center lg:justify-start w-full lg:w-auto">
-              <Image
-                src="/mountain-square-logo.png"
-                alt="logo"
-                width={100}
-                height={80}
-                priority
-                className="rounded-full"
-              />
+              <Link href="/">
+                <Image
+                  src="/mountain-square-logo.png"
+                  alt="logo"
+                  width={100}
+                  height={80}
+                  priority
+                  className="rounded-full"
+                />
+              </Link>
             </Box>
 
             {/* Contact information & CTA */}

@@ -110,7 +110,16 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { Building, CalendarDays, Rocket, UserRound } from "lucide-react";
+import {
+  ArrowLeftRight,
+  BadgeIndianRupee,
+  Building,
+  CalendarDays,
+  CircleCheck,
+  Rocket,
+  ShieldCheck,
+  UserRound,
+} from "lucide-react";
 import SectionContainer from "./section-container";
 import Text from "./text";
 import Box from "./box";
@@ -197,14 +206,14 @@ const CountUp = () => {
       label: "Happy Clients",
     },
     {
-      icon: Rocket,
-      value: "99%",
-      label: "Success Rate",
+      icon: BadgeIndianRupee,
+      value: "100%",
+      label: "Safe Transaction",
     },
     {
-      icon: UserRound,
-      value: "140+",
-      label: "Achievements",
+      icon: CircleCheck,
+      value: "100%",
+      label: "Quality Delivery",
     },
   ];
 
@@ -212,17 +221,6 @@ const CountUp = () => {
     <Box className="bg-[#f5f5f5]">
       <Box className="bg-[#833ab4]/20 py-12">
         <SectionContainer className="py-0">
-          <Box className="w-full flex flex-col items-center">
-            {/* <Text
-              variant="h2"
-              className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] inline-block text-transparent bg-clip-text text-center text-[30px] md:text-[35px] lg:text-[40px] font-bold mb-2"
-            >
-              Mountain Square Construction Pvt Ltd
-            </Text>
-            <Text className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] inline-block text-transparent bg-clip-text md:text-[23px] lg:text-[23px] font-bold mb-5">
-              We are the Best Construction Company In Bangalore
-            </Text> */}
-          </Box>
           <Box className="mx-auto px-0 md:px-4">
             <Box className="bg-white shadow-xl py-8 px-6 md:px-10 lg:px-16 rounded-2xl xl:rounded-[30px]">
               <Box className="grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-3">

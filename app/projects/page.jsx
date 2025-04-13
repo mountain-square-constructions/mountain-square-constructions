@@ -74,31 +74,31 @@ const Projects = () => {
         {
           id: 1,
           image: "/interior/interior1.jpg",
-          location: "Historic Townhouse, Boston",
-          status: "Completed/ongoing",
+          location: "BSR Layout, Jigani, Bengaluru",
+          status: "Completed",
         },
         {
           id: 2,
           image: "/interior/interior2.jpg",
-          location: "Industrial Loft Conversion, Brooklyn",
+          location: "Kanakpura Road, Thatagunni, Bengaluru",
           status: "Completed",
         },
         {
           id: 3,
           image: "/interior/interior3.jpg",
-          location: "Victorian Restoration, San Francisco",
-          status: "Completed/ongoing",
+          location: "Royal Reed Layout, Electronic City",
+          status: "Completed",
         },
         {
           id: 4,
           image: "/interior/interior4.jpg",
-          location: "Commercial Building Revitalization, Portland",
+          location: "Kalluballu, Jigani, Bengaluru",
           status: "Completed",
         },
         {
           id: 5,
           image: "/interior/interior5.jpg",
-          location: "Commercial Building Revitalization, Portland",
+          location: "Hulimangala, Bengaluru",
           status: "Completed",
         },
       ],
@@ -259,7 +259,7 @@ const Projects = () => {
                           priority
                           className="rounded-full absolute top-4 right-4"
                         />
-                        <Box className="p-3 flex flex-col">
+                        <Box className="p-3 flex flex-col justify-between">
                           <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
                             {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
                             <span className="text-[#e64a27]">
