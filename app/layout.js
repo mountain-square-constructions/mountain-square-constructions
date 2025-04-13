@@ -4,6 +4,7 @@ import Header, { SubHeader } from "./components/navigation-components/header";
 import Box from "./components/box";
 import Footer from "./components/navigation-components/footer";
 import { GoogleTagManager } from "@next/third-parties/google";
+import FloatingWhatsAppButton from "./components/whats-app-button";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
         </Box>
         <GoogleTagManager gtmId="GTM-TGZRHWNP" />
         {children}
+        <FloatingWhatsAppButton phoneNumber="918310985053" />
         <Footer />
       </body>
     </html>
