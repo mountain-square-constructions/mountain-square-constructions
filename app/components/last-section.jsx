@@ -37,7 +37,7 @@ const CTASection = () => {
               size="lg"
               className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] hover:bg-[#f0542d]/90 hover:bg-[#d94020] text-white py-6 px-8 text-lg rounded-lg shadow-lg transition-transform hover:scale-105"
             >
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href="/contact-us" className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Get Your Free Quote
                 <ArrowRight className="ml-2 w-5 h-5" />

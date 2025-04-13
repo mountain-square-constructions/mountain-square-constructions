@@ -65,8 +65,8 @@ const Contact = () => {
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Address</Text>
                 <Text>
-                  Sy no 1 Rama Reddy building Hulimangala panchayat Jigani hobli
-                  Anekal taluk Bangalore 560100
+                  Sy no 1, Rama Reddy building,Hulimangala Gram panchayath -
+                  RJ9P+GQC, Karnataka 560105
                 </Text>
                 <Button
                   variant="outline"

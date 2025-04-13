@@ -91,7 +91,7 @@ const Header = () => {
               {/* CTA Button */}
               <Box className="flex items-center">
                 <Button className="bg-gradient-to-br from-[#833ab4] via-[#d9420f]/80 to-[#833ab4] hover:bg-[#f0542d]/90 text-base md:text-xl lg:text-[23px] rounded-none h-10 md:h-12 lg:h-14 px-6 md:px-8 lg:px-10">
-                  <Link href="/contact"> Get a Quote </Link>
+                  <Link href="/contact-us"> Get a Quote </Link>
                 </Button>
               </Box>
             </Box>
@@ -134,7 +134,7 @@ export const SubHeader = () => {
     {
       id: 5,
       title: "Contact",
-      href: "/contact",
+      href: "/contact-us",
     },
   ];
 

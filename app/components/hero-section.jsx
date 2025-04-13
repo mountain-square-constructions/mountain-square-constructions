@@ -155,7 +155,7 @@ const HeroSection = () => {
             Ready to Build Your Dream Home?
           </Text>
           <Button className="rounded-lg transition duration-300 ease-in-out transform hover:scale-105 h-12 sm:h-14 text-lg sm:text-xl px-8 bg-amber-500 hover:bg-amber-600 text-black font-bold">
-            <Link href="/contact">  Contact Us</Link>
+            <Link href="/contact-us">  Contact Us</Link>
           </Button>
         </SectionContainer>
       </Box>
