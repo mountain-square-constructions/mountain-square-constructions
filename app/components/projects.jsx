@@ -91,9 +91,9 @@ const Projects = () => {
           <Box className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-12">
             {/* Project Card 1 */}
             <Box className="shadow-lg rounded-lg bg-background overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-96">
                 <Image
-                  src="/individualhouseprject1.jpeg"
+                  src="/projects/projects1.jpg"
                   alt="Verner's House, Jayanagar, Bangalore"
                   fill
                   className="object-cover"
@@ -102,8 +102,8 @@ const Projects = () => {
               <Box className="p-3 flex flex-col">
                 <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
                   {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
-                  <span className="text-[#e64a27]">Location:</span> Lakeside
-                  Villa outside, Beverly Hills,
+                  <span className="text-[#e64a27]">Location:</span> Hulimangala,
+                  Electronic City
                 </Text>
                 <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
                   {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
@@ -115,9 +115,9 @@ const Projects = () => {
 
             {/* Project Card 2 */}
             <Box className="shadow-lg rounded-lg bg-background overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-96">
                 <Image
-                  src="/individualhouseprject2.jpeg"
+                  src="/projects/projects2.jpg"
                   alt="Allen poper's House, Jayanagar, Bangalore"
                   fill
                   className="object-cover"
@@ -126,22 +126,22 @@ const Projects = () => {
               <Box className="p-3 flex flex-col">
                 <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
                   {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
-                  <span className="text-[#e64a27]">Location:</span> Villa
-                  outside, Beverly Hills,
+                  <span className="text-[#e64a27]">Location:</span> Royal reed
+                  layout, Podu, Hulimangala, Electronic City
                 </Text>
                 <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
                   {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
                   <span className="text-[#e64a27]">Status: </span>
-                  Ongoing
+                  Completed
                 </Text>
               </Box>
             </Box>
 
             {/* Project Card 3 */}
             <Box className="shadow-lg rounded-lg bg-background overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-96">
                 <Image
-                  src="/individualhouseprject3.jpeg"
+                  src="/projects/projects3.jpg"
                   alt="Rajesh House, Jayanagar, Bangalore"
                   fill
                   className="object-cover"
@@ -150,13 +150,13 @@ const Projects = () => {
               <Box className="p-3 flex flex-col">
                 <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
                   {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
-                  <span className="text-[#e64a27]">Location:</span> Lakeside
-                  Villa outside, Beverly Hills,
+                  <span className="text-[#e64a27]">Location:</span> Royal reed
+                  layout, Podu, Hulimangala, Electronic City
                 </Text>
                 <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
                   {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
                   <span className="text-[#e64a27]">Status: </span>
-                  completed/ongoing
+                  Completed
                 </Text>
               </Box>
             </Box>

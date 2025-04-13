@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
                   value={index.toString()}
                   className={cn(
                     "w-full text-left justify-between items-center p-3 rounded-lg transition-all duration-300 border-l-4 text-[20px] font-semibold flex",
-                    "data-[state=active]:bg-[#f0542d] data-[state=active]:text-white data-[state=active]:border-white",
+                    "data-[state=active]:bg-gradient-to-br from-[#833ab4] via-[#d9420f]/70 to-[#833ab4] data-[state=active]:text-white data-[state=active]:border-white",
                     "hover:bg-[#f0542d]/30 bg-white shadow-lg border-transparent"
                   )}
                 >

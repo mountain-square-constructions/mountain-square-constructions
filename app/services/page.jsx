@@ -24,7 +24,7 @@ const Services = () => {
       title: "Interior Design and Execution",
       description:
         "Our team of expert designers creates spaces that are both functional and visually stunning. Tailored to suit your lifestyle, we manage every aspect of the design and execution process to bring your vision to life with elegance and precision.",
-      img: "/slider3.jpg",
+      img: "/interior/interior5.jpg",
     },
     {
       iconName: "Rotate3d", // String instead of component reference
@@ -47,7 +47,7 @@ const Services = () => {
       <Box className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
         {/* Background Image */}
         <Image
-          src="/slider3.jpg"
+          src="/services.jpeg"
           alt="Projects Background"
           fill
           className="object-cover object-center"

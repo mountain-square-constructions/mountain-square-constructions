@@ -26,26 +26,44 @@ const Projects = () => {
       projects: [
         {
           id: 1,
-          image: "/slider1.jpg",
-          location: "Lakeside Villa outside, Beverly Hills",
+          image: "/projects/projects1.jpg",
+          location: "Hulimangala, Electronic City",
           status: "Completed",
         },
         {
           id: 2,
-          image: "/slider3.jpg",
-          location: "Modern Farmhouse, Napa Valley",
-          status: "Completed/ongoing",
+          image: "/projects/projects2.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
+          status: "Completed",
         },
         {
           id: 3,
-          image: "/residentialproject.avif",
-          location: "Contemporary Estate, Malibu",
-          status: "Completed/ongoing",
+          image: "/projects/projects3.jpg",
+          location: "Electronic City, Bengaluru",
+          status: "Completed",
         },
         {
           id: 4,
-          image: "/individualhouse.jpeg",
-          location: "Mediterranean Mansion, Santa Barbara",
+          image: "/projects/projects5.jpg",
+          location: "BSR layout, jigani",
+          status: "Completed",
+        },
+        {
+          id: 5,
+          image: "/projects/projects6.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
+          status: "Ongoing",
+        },
+        {
+          id: 6,
+          image: "/projects/projects7.jpg",
+          location: "BSR layout, jigani",
+          status: "Ongoing",
+        },
+        {
+          id: 7,
+          image: "/projects/projects4.jpg",
+          location: "Electronic City, Bengaluru",
           status: "Completed",
         },
       ],
@@ -55,25 +73,31 @@ const Projects = () => {
       projects: [
         {
           id: 1,
-          image: "/budget.jpg",
+          image: "/interior/interior1.jpg",
           location: "Historic Townhouse, Boston",
           status: "Completed/ongoing",
         },
         {
           id: 2,
-          image: "/standard.png",
+          image: "/interior/interior2.jpg",
           location: "Industrial Loft Conversion, Brooklyn",
           status: "Completed",
         },
         {
           id: 3,
-          image: "/homepage-hero-img1.jpg",
+          image: "/interior/interior3.jpg",
           location: "Victorian Restoration, San Francisco",
           status: "Completed/ongoing",
         },
         {
           id: 4,
-          image: "/renovationhouse.avif",
+          image: "/interior/interior4.jpg",
+          location: "Commercial Building Revitalization, Portland",
+          status: "Completed",
+        },
+        {
+          id: 5,
+          image: "/interior/interior5.jpg",
           location: "Commercial Building Revitalization, Portland",
           status: "Completed",
         },
@@ -84,32 +108,44 @@ const Projects = () => {
       projects: [
         {
           id: 1,
-          image: "/slider2.jpg",
-          location: "Luxury Penthouse, Downtown Manhattan",
+          image: "/architecture/architecture1.jpg",
+          location: "Kanakapura, Bengaluru",
           status: "Completed",
         },
         {
           id: 2,
-          image: "/renovationhouse.avif",
-          location: "Minimalist Apartment, Chicago",
+          image: "/architecture/architecture2.jpg",
+          location: "Royal regalia layout, Hulimangala, Electronic City",
           status: "Completed",
         },
         {
           id: 3,
-          image: "/individualhouseprject3.jpeg",
-          location: "Executive Office Suite, San Francisco",
+          image: "/architecture/architecture3.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
           status: "Completed/ongoing",
         },
         {
           id: 4,
-          image: "/individualhouseprject2.jpeg",
-          location: "Boutique Hotel Lobby, Miami",
+          image: "/architecture/architecture4.jpg",
+          location: "Jigani, Bengaluru",
           status: "Completed",
         },
         {
           id: 5,
-          image: "/bestquality.jpg",
-          location: "Restaurant Redesign, Seattle",
+          image: "/architecture/architecture5.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
+          status: "Completed/ongoing",
+        },
+        {
+          id: 6,
+          image: "/architecture/architecture6.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
+          status: "Completed/ongoing",
+        },
+        {
+          id: 7,
+          image: "/architecture/architecture7.jpg",
+          location: "Jigani, Bengaluru",
           status: "Completed/ongoing",
         },
       ],
@@ -119,27 +155,27 @@ const Projects = () => {
       projects: [
         {
           id: 1,
-          image: "/budget.jpg",
-          location: "Historic Townhouse, Boston",
-          status: "Completed",
+          image: "/renovation/renovation2.jpg",
+          location: "Bommanahalli, Begur",
+          status: "Ongoing",
         },
         {
           id: 2,
-          image: "/standard.png",
-          location: "Industrial Loft Conversion, Brooklyn",
-          status: "Completed/ongoing",
+          image: "/renovation/renovation3.jpg",
+          location: "Jigani, Bengaluru",
+          status: "Ongoing",
         },
         {
           id: 3,
-          image: "/homepage-hero-img1.jpg",
-          location: "Victorian Restoration, San Francisco",
+          image: "/renovation/renovation4.jpg",
+          location: "Royal reed layout, Podu, Hulimangala, Electronic City",
           status: "Completed",
         },
         {
           id: 4,
-          image: "/renovationhouse.avif",
-          location: "Commercial Building Revitalization, Portland",
-          status: "Completed/ongoing",
+          image: "/renovation/renovation5.jpg",
+          location: "Thoguru Cross, Electronic City",
+          status: "Ongoing",
         },
       ],
     },
@@ -151,7 +187,7 @@ const Projects = () => {
       <Box className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
         {/* Background Image */}
         <Image
-          src="/slider3.jpg"
+          src="/projects.jpg"
           alt="Projects Background"
           fill
           className="object-cover object-center"
@@ -178,63 +214,78 @@ const Projects = () => {
       </Box>
 
       {/* Main Content Section */}
-      <SectionContainer className="py-16">
-        <Box>
-          <Box className="relative">
-            <Text
-              variant="h2"
-              className="text-3xl font-bold mb-8 text-center text-[#e64a27] "
-            >
-              Explore Our Completed and Ongoing Projects in Bangalore
-            </Text>
-          </Box>
-          <Box className="border-b-2 border-dotted my-10" />
-
+      <Box className="bg-[#833ab4]/20">
+        <SectionContainer className="py-16  ">
           <Box>
-            {projectCategories.map((category, index) => (
-              <Box key={index} className="">
-                <Text
-                  variant="h2"
-                  className="text-2xl font-semibold text-[#e64a27] mb-6"
-                >
-                  {category.title}
-                </Text>
-                <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {category.projects.map((project) => (
-                    <Box
-                      key={project.id}
-                      className="group transition-all duration-300 hover:shadow-xl shadow-lg rounded-xl"
-                    >
-                      <Box className="overflow-hidden rounded-xl">
+            <Box className="relative">
+              <Text
+                variant="h2"
+                className="text-3xl font-bold mb-8 text-center text-[#e64a27] "
+              >
+                Explore Our Completed and Ongoing Projects in Bangalore
+              </Text>
+            </Box>
+            <Box className="border-b-2 border-dotted my-10" />
+
+            <Box>
+              {projectCategories.map((category, index) => (
+                <Box key={index} className="">
+                  <Text
+                    variant="h2"
+                    className="text-2xl font-semibold text-[#e64a27] mb-6"
+                  >
+                    {category.title}
+                  </Text>
+                  <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {category.projects.map((project) => (
+                      <Box
+                        key={project.id}
+                        className="group transition-all duration-300 hover:shadow-xl shadow-lg rounded-xl bg-white relative"
+                      >
+                        <Box className="overflow-hidden rounded-xl ">
+                          <Image
+                            src={project.image}
+                            alt={`${category.title} project in ${project.location}`}
+                            width={100}
+                            height={100}
+                            className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </Box>
                         <Image
-                          src={project.image}
-                          alt={`${category.title} project in ${project.location}`}
-                          width={100}
-                          height={100}
-                          className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                          src="/mountain-square-logo.png"
+                          alt="logo"
+                          width={50}
+                          height={50}
+                          priority
+                          className="rounded-full absolute top-4 right-4"
                         />
+                        <Box className="p-3 flex flex-col">
+                          <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
+                            {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
+                            <span className="text-[#e64a27]">
+                              Location:
+                            </span>{" "}
+                            {project.location}
+                          </Text>
+                          {category.title ===
+                          "2D & 3D Architectural Planning" ? null : (
+                            <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
+                              {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
+                              <span className="text-[#e64a27]">Status: </span>
+                              {project.status}
+                            </Text>
+                          )}
+                        </Box>
                       </Box>
-                      <Box className="p-3 flex flex-col">
-                        <Text className="mt-3 text-lg font-bold flex items-start gap-x-2">
-                          {/* <MapPinHouse fill="#e64a27" stroke="#fff" /> */}
-                          <span className="text-[#e64a27]">Location:</span>{" "}
-                          {project.location}
-                        </Text>
-                        <Text className="text-lg font-medium flex items-center gap-x-2 mt-auto">
-                          {/* <MapPin fill="#e64a27" stroke="#fff" /> */}
-                          <span className="text-[#e64a27]">Status: </span>
-                          {project.status}
-                        </Text>
-                      </Box>
-                    </Box>
-                  ))}
+                    ))}
+                  </Box>
+                  <Box className="border-b-2 border-dotted my-10" />
                 </Box>
-                <Box className="border-b-2 border-dotted my-10" />
-              </Box>
-            ))}
+              ))}
+            </Box>
           </Box>
-        </Box>
-      </SectionContainer>
+        </SectionContainer>
+      </Box>
     </>
   );
 };
