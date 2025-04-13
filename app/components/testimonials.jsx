@@ -137,9 +137,11 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             {/* Position arrows at the top right corner */}
-            <Box className="absolute xs:top-[105%] xs:right-[40%] sm:-top-5 sm:right-0 flex gap-x-5">
-              <CarouselPrevious className="relative left-0 bg-[#f0542d] hover:bg-[#f0542d]/90 text-white hover:text-white" />
-              <CarouselNext className="relative right-0 bg-[#f0542d] hover:bg-[#f0542d]/90 text-white hover:text-white" />
+            <Box className="absolute top-[105%] right-[40%] sm:-top-5 sm:right-0 ">
+              <Box className="flex gap-x-5">
+                <CarouselPrevious className="relative left-0 bg-[#f0542d] hover:bg-[#f0542d]/90 text-white hover:text-white" />
+                <CarouselNext className="relative right-0 bg-[#f0542d] hover:bg-[#f0542d]/90 text-white hover:text-white" />
+              </Box>
             </Box>
           </Carousel>
         </Box>

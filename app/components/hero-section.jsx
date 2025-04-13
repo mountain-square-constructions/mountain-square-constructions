@@ -125,7 +125,7 @@ const HeroSection = () => {
     //   </div>
     // </SectionContainer>
 
-    <Box className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[450px]">
+    <Box className="relative w-full min-h-[400px] md:min-h-[350px] lg:min-h-[450px]">
       {/* Background Image */}
       <Image
         src="/homepage-hero-img1.jpg"

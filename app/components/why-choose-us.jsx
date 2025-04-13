@@ -56,10 +56,13 @@ const WhyChooseUs = () => {
     <Box className="bg-[#833ab4]/20">
       <SectionContainer className="py-6">
         {/* Main Content */}
-        <Box className="container mx-auto px-4 py-16">
-          <h2 className="text-center md:text-[30px] lg:text-[30px] tracking-wider font-bold mb-10">
+        <Box className="container mx-auto px-0 md:px-4 py-16">
+          <Text
+            variant="h2"
+            className="text-center text-[30px] md:text-[35px] lg:text-[35px] font-bold mb-12 text-[#f0542d]"
+          >
             Why Choose Us
-          </h2>
+          </Text>
 
           {/* Desktop Tabs View - Hidden on mobile, visible on md and above */}
           <Tabs defaultValue="0" className="hidden md:flex flex-row gap-8">
@@ -135,7 +138,7 @@ const WhyChooseUs = () => {
                 >
                   <AccordionTrigger
                     className={cn(
-                      "w-full p-4 flex justify-between items-center transition-colors",
+                      "w-full p-4 flex justify-between items-center transition-colors bg-white shadow-lg",
                       "hover:no-underline [&[data-state=open]]:bg-[#f0542d] [&[data-state=open]]:text-white"
                     )}
                   >
@@ -143,7 +146,7 @@ const WhyChooseUs = () => {
                       {tab.title}
                     </Box>
                   </AccordionTrigger>
-                  <AccordionContent className="pb-0">
+                  <AccordionContent className="pb-0 bg-white shadow-lg">
                     <Box>
                       <Box className="p-4">
                         <Text className="font-medium leading-7">

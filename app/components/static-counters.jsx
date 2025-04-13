@@ -223,7 +223,7 @@ const CountUp = () => {
               We are the Best Construction Company In Bangalore
             </Text> */}
           </Box>
-          <Box className="mx-auto px-4">
+          <Box className="mx-auto px-0 md:px-4">
             <Box className="bg-white shadow-xl py-8 px-6 md:px-10 lg:px-16 rounded-2xl xl:rounded-[30px]">
               <Box className="grid grid-cols-1 md:grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-3">
                 {/* Left side with logo and experience */}

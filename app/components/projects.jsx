@@ -79,7 +79,7 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <Box className="bg-[#833ab4]/20">
-      <SectionContainer className="py-0 md:py-12">
+      <SectionContainer className="py-6 md:py-12">
         <Box className="flex flex-col items-center">
           <Text
             variant="h2"

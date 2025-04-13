@@ -52,22 +52,22 @@ const Footer = () => {
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/">Home</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/about-us">About</Link>{" "}
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/projects">Projects</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 {" "}
                 <Link href="/contact">Contact us</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
             </ul>
           </Box>
@@ -79,19 +79,19 @@ const Footer = () => {
             <ul className="space-y-3 text-[18px] font-medium ml-5 md:ml-2">
               <li className="relative group max-w-fit">
                 <Link href="/services">Construction of Individual Houses</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 <Link href="/services">Interior Design and Execution</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 <Link href="/services"> 2D & 3D Architectural Planning</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
               <li className="relative group max-w-fit">
                 <Link href="/services"> Renovation of Existing Buildings</Link>
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#f0542d] group-hover:w-full transition-all duration-300 group-hover:left-0"></span>
               </li>
             </ul>
           </Box>
@@ -100,14 +100,14 @@ const Footer = () => {
           <Text className="text-[16px]">
             © 2025 mountainsquare All rights reserved.
           </Text>
-          <Text className="ml-5 md:ml-0 !whitespace-normal text-wrap">
+          <Text className="!whitespace-normal text-wrap">
             {" "}
             <Link
               href="mailto:contact@mountainsquareconstruction.com"
               className="text-wrap !whitespace-normal"
             >
               {" "}
-              contact@mountainsquareconstruction.com
+              contact@mountainsquareconst ruction.com
             </Link>
           </Text>
           <Text

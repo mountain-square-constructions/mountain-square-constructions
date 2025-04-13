@@ -21,7 +21,12 @@ const PhoneButton = ({ phoneNumber, children }) => {
       onClick={handleClick}
       className="flex items-start gap-x-8 mb-10 cursor-pointer"
     >
-      <Phone size={50} fill="#e64a27" stroke="#fff" />
+      <Phone
+        size={80}
+        fill="#e64a27"
+        stroke="#fff"
+        className="w-11 h-11 xl:w-12 xl:h-12"
+      />
       <div>
         <div className="text-[25px] font-semibold mb-1">Phone Number</div>
         <div>{children || phoneNumber}</div>

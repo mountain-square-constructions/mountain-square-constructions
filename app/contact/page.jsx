@@ -50,13 +50,18 @@ const Contact = () => {
       </Box>
 
       <SectionContainer>
-        <Box className="grid md:grid-cols-12 gapx-10">
+        <Box className="md:grid md:grid-cols-12 md:gapx-10">
           <Box className="md:col-span-5 pr-11">
             <Text variant="h2" className="text-[#e64a27] mb-5">
               Visit us to explore our projects.
             </Text>
             <Box className="flex items-start gap-x-8 ">
-              <MapPin size={80} fill="#e64a27" stroke="#fff" />
+              <MapPin
+                size={80}
+                fill="#e64a27"
+                stroke="#fff"
+                className="w-11 h-11 xl:w-16 xl:h-16"
+              />
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Address</Text>
                 <Text>
@@ -65,10 +70,10 @@ const Contact = () => {
                 </Text>
                 <Button
                   variant="outline"
-                  className="bg-transparent hover:bg-transparent/10 rounded-none mb-10"
+                  className="bg-transparent border-2 border-muted-foreground rounded-md hover:bg-transparent/10 h-12 md:h-10 mb-10"
                 >
                   <Link
-                    className="!font-semibold text-[18px] text-[#e64a27]"
+                    className="!font-semibold text-[18px] text-[#e64a27] whitespace-break-spaces"
                     href="https://www.google.com/maps/place/Hulimangala/@12.8202881,77.6374595,21z/data=!4m14!1m7!3m6!1s0x3bae6b33355ff423:0x1533cdb66f43998f!2sRama+Reddy+Building!8m2!3d12.7883295!4d77.6309192!16s%2Fg%2F11q3ltljdt!3m5!1s0x3bae6b00347d8c2f:0x5cc42e1525647ca6!8m2!3d12.8203779!4d77.6374981!16s%2Fg%2F11wtzsvxrx?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D"
                     target="blank"
                   >
@@ -83,7 +88,12 @@ const Contact = () => {
               +91 83109 85053
             </PhoneButton>
             <Box className="flex items-start gap-x-8">
-              <Mail size={50} fill="#e64a27" stroke="#fff" />
+              <Mail
+                size={80}
+                fill="#e64a27"
+                stroke="#fff"
+                className="w-11 h-11 xl:w-12 xl:h-12"
+              />
               <Box>
                 <Text className="text-[25px] font-semibold mb-1">Email</Text>
                 <Text>
@@ -95,7 +105,7 @@ const Contact = () => {
               </Box>
             </Box>
           </Box>
-          <Box className="md:col-span-7">
+          <Box className=" md:col-span-7">
             <Text variant="h2" className="text-[#e64a27] mb-5">
               Get Started Today
             </Text>
