@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Mountain Square Construction",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://mountainsquareconstruction.com/mountain-square-logo.png",
         width: 1200,
         height: 630,
       },
