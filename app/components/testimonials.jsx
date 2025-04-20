@@ -65,6 +65,16 @@ I recently moved into my newly constructed home. The design and layout are exact
     role: "Electronic City, Bengaluru",
     image: "/testimonial.png",
   },
+  {
+    id: 6,
+    title: "Respectfull and Understanding Team ",
+    rating: 6,
+    description:
+      "The team working on my site has been great so far—very good and friendly people! They’ve been easy to communicate with and respectful throughout the process. The construction is still ongoing, but my experience up to this point has been really positive. Looking forward to seeing the final result!",
+    author: "RajShekar Reddy Nr",
+    role: "Electronic City, Bengaluru",
+    image: "/testimonial.png",
+  },
 ];
 
 const Testimonials = () => {
