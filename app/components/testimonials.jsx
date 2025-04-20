@@ -68,11 +68,21 @@ I recently moved into my newly constructed home. The design and layout are exact
   {
     id: 6,
     title: "Respectfull and Understanding Team ",
-    rating: 6,
+    rating: 5,
     description:
-      "The team working on my site has been great so far—very good and friendly people! They’ve been easy to communicate with and respectful throughout the process. The construction is still ongoing, but my experience up to this point has been really positive. Looking forward to seeing the final result!",
+      "The team has been great—friendly, respectful, and easy to communicate with. Construction is still ongoing, but the experience so far has been very positive. Looking forward to the final result!",
     author: "RajShekar Reddy Nr",
     role: "Electronic City, Bengaluru",
+    image: "/testimonial.png",
+  },
+  {
+    id: 7,
+    title: "Fantastic Experience ",
+    rating: 5,
+    description:
+      "Had a fantastic experience with Mountain Square Construction. Their work was professional, well-organized, and detail-oriented from start to finish. The quality exceeded my expectations, and I highly recommend them for reliable, high-quality construction services.",
+    author: "Maheswarareddy Tavva",
+    role: "Anekal, Bengaluru",
     image: "/testimonial.png",
   },
 ];

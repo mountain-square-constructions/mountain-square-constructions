@@ -245,12 +245,17 @@ export const SubHeader = () => {
                 className="cursor-pointer hover:scale-110 transition-transform"
               />
             </Link>
+            <Link
+              target="blank"
+              href="https://www.instagram.com/mountainsquareconstruction"
+            >
             <Instagram
               fill="#f0542d"
               stroke="#fff"
               size={18}
               className="cursor-pointer hover:scale-110 transition-transform"
             />
+            </Link>
             <Link
               target="blank"
               href="https://www.linkedin.com/company/mountainsquareconstruction/"
