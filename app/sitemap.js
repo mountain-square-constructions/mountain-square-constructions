@@ -23,6 +23,11 @@ export default async function sitemap() {
       priority: 0.8,
     },
     {
+      url: "https://mountainsquareconstruction.com/packages",
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
       url: "https://mountainsquareconstruction.com/contact-us",
       lastModified: new Date(),
       priority: 0.8,

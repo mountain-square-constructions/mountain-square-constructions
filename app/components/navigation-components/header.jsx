@@ -132,6 +132,11 @@ export const SubHeader = () => {
       href: "/projects",
     },
     {
+      id: 4,
+      title: "Packages",
+      href: "/packages",
+    },
+    {
       id: 5,
       title: "Contact Us",
       href: "/contact-us",
@@ -249,12 +254,12 @@ export const SubHeader = () => {
               target="blank"
               href="https://www.instagram.com/mountainsquareconstruction"
             >
-            <Instagram
-              fill="#f0542d"
-              stroke="#fff"
-              size={18}
-              className="cursor-pointer hover:scale-110 transition-transform"
-            />
+              <Instagram
+                fill="#f0542d"
+                stroke="#fff"
+                size={18}
+                className="cursor-pointer hover:scale-110 transition-transform"
+              />
             </Link>
             <Link
               target="blank"
