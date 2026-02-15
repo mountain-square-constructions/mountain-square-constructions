@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "Affordable Construction Packages | Mountain Square Construction",
     description:
-      "Compare Bronze, Silver, Gold, and Platinum construction packages. Transparent pricing, premium materials, and trusted expertise for your dream project.",
+      "Mountain Square is a construction company in bengaluru doing house construction, building construction, & commercial construction. House construction packages start at Rs 1599/Sq.Ft",
     url: "https://mountainsquareconstruction.com/",
     siteName: "Mountain Square Construction",
     images: [
