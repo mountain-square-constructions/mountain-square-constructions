@@ -40,25 +40,25 @@ export const metadata = {
 const packages = [
   {
     name: "Basic",
-    price: "₹1,599",
+    price: "₹1,799",
     badge: "/bronze.png",
     features: ["Basic Design", "Standard Materials", "Basic Support"],
   },
   {
     name: "Silver",
-    price: "₹1,699",
+    price: "₹1,899",
     badge: "/silverbadge.png",
     features: ["Premium Design", "Better Materials", "Priority Support"],
   },
   {
     name: "Gold",
-    price: "1,899",
+    price: "2,099",
     badge: "/goldbadge.png",
     features: ["Luxury Finish", "High-Quality Materials", "24/7 Support"],
   },
   {
     name: "Platinum",
-    price: "₹2,099",
+    price: "₹2,299",
     badge: "/Platinum-Medal.png",
     features: [
       "Ultra Luxury Finish",
